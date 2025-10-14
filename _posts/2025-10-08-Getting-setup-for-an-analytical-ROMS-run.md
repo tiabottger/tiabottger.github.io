@@ -9,10 +9,11 @@ LiveOcean Python code "wraps-around" ROMS code, so I won't be interacting with i
 
 ### First try using LiveOcean (LO) Code to generate forcing files
 Following the steps in: [Analytical (idealized) ROMS simulations](https://github.com/parkermac/LO/blob/main/notes/analytical_runs.md) Christie, Maia and I met up and succeeded in making a grid of an idealized estuary + coast domain. This is `gridname = 'ae0'` in `LO_user/pgrid/gfun_user.py`. When you go into `LO/pgrid` and run the sequence of python commands, the code looks into my specific `LO_user` folder to grab the `gfun_user` file. Hence, LO code is run from within the LO directory, but I modify input scenarios and specifications from my own LO_user repo. This is an example of a "hook" built into the LO code! Here is what it looks like to run the first command `start_grid`:
-<img width="2202" height="368" alt="image" src="https://github.com/user-attachments/assets/6d5ea60e-532b-4e88-8f80-b567429d75e7"/> *Executing start_grid in LO/pgrid code imports my own gfun_user from LO_user*
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/6d5ea60e-532b-4e88-8f80-b567429d75e7"/>   
+*Fig 1: Executing start_grid in LO/pgrid code imports my own gfun_user from LO_user*
 
-The idealized domain created looks like this:
-<img width="1286" height="1094" alt="image" src="https://github.com/user-attachments/assets/0e4f9f8a-4c59-4df8-b64c-3a83afb2e08b" />
-Where the color bar represents elevation, note we adjusted the zmin and zmax scale to match the example.
+The idealized domain created looks like this:  
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/0e4f9f8a-4c59-4df8-b64c-3a83afb2e08b" />   
+*Fig 2: Idealized estuary domain. The color bar represents elevation, note we adjusted the zmin and zmax scale to match the example.*
 
 We copied the output data generated in `LO_data/grids/ae0` to the remote apogee machine to create the forcing NetCDF files that ROMS will need to run. The reason for running them on apogee is that klone (the UW hyak supercomputer that has the computational resources needed to simulate a run) communicates with the remote machine, not my PC. NetCDF files contain multidimensional data, and I plan to explore these using the python `xarray` library before trying my first ROMS run on klone next week!
