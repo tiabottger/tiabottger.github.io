@@ -6,6 +6,8 @@ arrays in NetCDF grid file:
 - `xl`: basin X-length
 - `el`: basin Y-length
 - `h`: bathymetry
+  - The bathymetry for ROMS is measured positive downwards, from a datum such as mean sea level (MSL). For a 'typical' ROMS application, the bathymetry would consist of all positive values.
 - masking follows ROMS convention of having 1 = water, 0 = land
-  - `mask_rho`: Land/Sea masking at RHO-points follows the 
-  - `mask_u`: Land/Sea masking at 
+
+Model grid and how variables are placed in it. 
+Variables rho, u, v, and psi reder to where variables are located relative to a model grid cell. <img width="300" alt="image" src="https://github.com/user-attachments/assets/b1e3009e-c9a2-4122-b453-70c0e24df9bc" />
