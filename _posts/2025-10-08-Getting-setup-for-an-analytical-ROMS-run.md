@@ -7,6 +7,8 @@ LiveOcean uses the ROMS (Regional Ocean Modeling System), a numerical modeling s
 
 LiveOcean Python code "wraps-around" ROMS code, so I won't be interacting with it directly but it's useful to understand what's happening under the hood. Next week I plan to look through the default ROMS test case of [Wind-Driven Upwelling/Downwelling over a Periodic Channel](https://www.myroms.org/wiki/UPWELLING_CASE).
 
+---
+
 ### First try using LiveOcean (LO) Code to generate forcing files
 Following the steps in: [Analytical (idealized) ROMS simulations](https://github.com/parkermac/LO/blob/main/notes/analytical_runs.md) Christie, Maia and I met up and succeeded in making a grid of an idealized estuary + coast domain. This is `gridname = 'ae0'` in `LO_user/pgrid/gfun_user.py`. When you go into `LO/pgrid` and run the sequence of python commands, the code looks into my specific `LO_user` folder to grab the `gfun_user` file. Hence, LO code is run from within the LO directory, but I modify input scenarios and specifications from my own LO_user repo. This is an example of a "hook" built into the LO code! Here is what it looks like to run the first command `start_grid`:
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/6d5ea60e-532b-4e88-8f80-b567429d75e7"/>   
