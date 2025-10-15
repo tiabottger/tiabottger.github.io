@@ -1,6 +1,6 @@
 ## Exploring model inputs and outputs
 
-Last week I used the Live Ocean collection of programs called `pgrid` to create an idealized estuary model grid and the NetCDF forcing files that are read into ROMS to run a simulation. Before my first run, I took a closer look at what was generated and what variables ROMS expects to find in a grid file. I glanced into `ROMS/Utility/get_grid.F`[here on Github](https://github.com/myroms/roms/blob/develop/ROMS/Utility/get_grid.F) to see what ROMS looks for in a grid in order to run.
+Last week I used the LiveOcean collection of programs called `pgrid` to create an idealized estuary model grid and the NetCDF forcing files that are read into ROMS to run a simulation. Before my first run, I took a closer look at what was generated and what variables ROMS expects to find in a grid file. I glanced into `ROMS/Utility/get_grid.F`[here on Github](https://github.com/myroms/roms/blob/develop/ROMS/Utility/get_grid.F) to see what ROMS looks for in a grid in order to run.
 
 Some variable names/definitions to make note of:
 - `xl`: basin X-length
