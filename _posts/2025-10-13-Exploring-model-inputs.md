@@ -23,7 +23,7 @@ Because the coordinate system is curvilear, new coordinates xi $\xi(x,y)$ and et
 
 Looking more closely at the idealized estuary grid I generated using the Python `xarray` library for reading NetCDF files, I can see how variables are defined spatially at each rho, psi, u, and v point on the xi eta coordinate grid. These are the "dimensions" of each variable. Note each time you run a piece of code in `pgrid` it makes a new grid file with the name altered to indicate what happened. The names start as: `grid_m00_r00_s00_x00.nc` with the letters and numbers indicating changes to: mask (m), river (r), smoothing (s), or extras (x). So the final grid is `grid_m01_r01_s01_x01.nc`. These are all stored in `LO_output/pgrid/ae0` while the final grid gets sent to `LO_data/grids/ae0` as `grid.nc` alongside other important info needed in the next step: 
 
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/45550c98-abcf-4d96-a840-0186a22c6de7" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/45550c98-abcf-4d96-a840-0186a22c6de7" />
 
 *Fig 2. The contents of `LO_data/grids/ae0`, everything needed to create forcing files.*
 
@@ -70,8 +70,8 @@ python driver_forcing00.py -g ae0 -0 2020.01.01 -1 2020.01.02 -f rivA0
 python driver_forcing00.py -g ae0 -0 2020.01.01 -1 2020.01.02 -f ocnA0 -s new
 python driver_forcing00.py -g ae0 -0 2020.01.01 -1 2020.01.02 -f tideA0
 ``` 
-out of `LO/driver` I had gotten the following error:
-<img width="900" alt="image" src="https://github.com/user-attachments/assets/5ef5a01e-8c76-4989-8074-5608dac4d975" />
+out of `LO/driver` I had gotten the following error:  
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/5ef5a01e-8c76-4989-8074-5608dac4d975" />    
 This printout comes from the following code at the bottom of `driver_forcing00.py`: <img width="500" alt="image" src="https://github.com/user-attachments/assets/ddaee2fd-292f-4235-847d-d98ad46be050" />  
 Which seemed like it hadn't interfered with generating the forcing files (so we'd tried commenting out this for loop) but maybe needs further investigation.  
 **The fix!**  
