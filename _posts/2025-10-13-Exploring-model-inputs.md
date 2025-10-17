@@ -73,6 +73,6 @@ python driver_forcing00.py -g ae0 -0 2020.01.01 -1 2020.01.02 -f tideA0
 out of `LO/driver` I had gotten the following error:
 <img width="900" alt="image" src="https://github.com/user-attachments/assets/5ef5a01e-8c76-4989-8074-5608dac4d975" />
 This printout comes from the following code at the bottom of `driver_forcing00.py`: <img width="500" alt="image" src="https://github.com/user-attachments/assets/ddaee2fd-292f-4235-847d-d98ad46be050" />  
-Which seemed like it hadn't interfered with generating the forcing files (so we'd tried commenting out this for loop) but maybe needs further investigation.
+Which seemed like it hadn't interfered with generating the forcing files (so we'd tried commenting out this for loop) but maybe needs further investigation.  
 **The fix!**  
 Going into the `Info` folder there's screen_output.txt from which we could see the `driver_forcing00.py` script was looking for `varinfo.yml` within the ROMS source code (`LO_roms_source_git`). I hadn't imported this into apogee since we don't run ROMS in apogee, but following Aurora's advice I copied just `varinfo.yml` within `LO_roms_source_git/ROMS/External` into my apogee directory. I reran and now have forcing NetCDFs!
