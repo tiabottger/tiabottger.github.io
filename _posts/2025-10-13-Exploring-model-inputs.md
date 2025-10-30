@@ -54,7 +54,7 @@ Data variables:
 ```
 
 I've run into a but of a hangup in getting to my next goal of... 
-### Exploring model outputs (stuck, no outputs!)
+### Trying to compile (stuck, no outputs!)
 - To run ROMS on klone, I need to compile (done using `.build_roms.sh`). This is looking for `netcdf-ifort` and `netcdf-icc`, netCDF compilers in Intel Fortran and Intel C, which are in Parker's `gscratch/macc` that I don't yet have access to. Christie and I tried pointing to other modules on klone where the code could find these (using `module avail`) but we ran into an error with the version match-up and didn't want to get too far down this rabbit hole. I've set my directories in klone's .bashrc back to Parker's default so **I should be good to go once I get access**:
 ```
 LODIR=/gscratch/macc/local
@@ -74,5 +74,5 @@ out of `LO/driver` I had gotten the following error:
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/5ef5a01e-8c76-4989-8074-5608dac4d975" />    
 This printout comes from the following code at the bottom of `driver_forcing00.py`: <img width="500" alt="image" src="https://github.com/user-attachments/assets/ddaee2fd-292f-4235-847d-d98ad46be050" />  
 Which seemed like it hadn't interfered with generating the forcing files (so we'd tried commenting out this for loop) but maybe needs further investigation.  
-**The fix!**  
+#### The fix! ####
 Going into the `Info` folder there's screen_output.txt from which we could see the `driver_forcing00.py` script was looking for `varinfo.yml` within the ROMS source code (`LO_roms_source_git`). I hadn't imported this into apogee since we don't run ROMS in apogee, but following Aurora's advice I copied just `varinfo.yml` within `LO_roms_source_git/ROMS/External` into my apogee directory. I reran and now have forcing NetCDFs!
