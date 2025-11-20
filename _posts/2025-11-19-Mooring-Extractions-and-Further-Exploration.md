@@ -1,3 +1,4 @@
+## Mooring 
 I am now (hopefully) at a place where my interface with LO is set-up to start doing some exploration. Dakota helped walk me and Maia through doing a mooring extractions from existing high res Whidbey basin model runs, and I feel confident that I can create a job extracting the lat long coords I'd like (defined in my `job_lists.py`) and specify which model run to extract from (within the python `multi_mooring_driver.py` command and making sure I'm pointing to Dakota's path which I've specified as roms_out_2 in my `get_lo_info.py`). 
 
 As a lead into getting more comfortable with LiveOcean and a way to get to know the biogeochemical story in Penn Cove driving hypoxia I'm hoping to look at some model output and compare it to KC data. Specifically, I'm curious about nitrate and chlorophyll data which we haven't explored much yet, and how the model compares in Penn cove (since we know as a whole LO has limited predictive power for phytoplankton growth).
@@ -8,4 +9,5 @@ The [KC Memo][https://your.kingcounty.gov/dnrp/library/2024/kcr3593-2024/kcr3593
 
 ## Some questions
 * I found these KC moorings: [Penn Cove bottom][https://data.kingcounty.gov/dataset/Penn-Cove-Entrance-Buoy-Raw-Data-Output-Bottom/fkix-9yyf/about_data], [Penn Cove surface][https://data.kingcounty.gov/dataset/Penn-Cove-Entrance-Buoy-Raw-Data-Output-Surface/59w7-7h7b/about_data], [Coupeville wharf][https://data.kingcounty.gov/Environment-Waste-Management/Coupeville-Wharf-Mooring-Raw-Data-Output/6trh-ufm8/about_data]. What data exists as part of the site visits (transects, profiles?) -- starting with 2017 or should I look over a longer timespan once Dakota has done more model runs?
-* What existing LO plotting code would be useful to utilize? 
+* Any tips for working with KC data?  
+* Any existing LO plotting code that would be useful to utilize?
