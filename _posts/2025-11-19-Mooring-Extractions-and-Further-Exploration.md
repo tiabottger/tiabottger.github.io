@@ -1,4 +1,4 @@
-## Mooring 
+## Mooring Extractions and Further Exploration
 I am now (hopefully) at a place where my interface with LO is set-up to start doing some exploration. Dakota helped walk me and Maia through doing a mooring extractions from existing high res Whidbey basin model runs, and I feel confident that I can create a job extracting the lat long coords I'd like (defined in my `job_lists.py`) and specify which model run to extract from (within the python `multi_mooring_driver.py` command and making sure I'm pointing to Dakota's path which I've specified as roms_out_2 in my `get_lo_info.py`). 
 
 As a lead into getting more comfortable with LiveOcean and a way to get to know the biogeochemical story in Penn Cove driving hypoxia I'm hoping to look at some model output and compare it to KC data. Specifically, I'm curious about nitrate and chlorophyll data which we haven't explored much yet, and how the model compares in Penn cove (since we know as a whole LO has limited predictive power for phytoplankton growth).
