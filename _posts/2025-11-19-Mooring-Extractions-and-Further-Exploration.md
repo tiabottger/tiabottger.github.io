@@ -6,5 +6,6 @@ I'm especially curious about surface nitrate (expecting levels to drop when high
 
 The [KC Memo][https://your.kingcounty.gov/dnrp/library/2024/kcr3593-2024/kcr3593-2024.pdf] Kate shared reported that in Penn Cove 2024, phytoplankton growth was limited by something other than nutrients, as phytoplankton growth was lower than but there were comparably N concentrations. The spring bloom evident in the drawdown signal of N also occurred in April rather than February or March as seen in prior years. It could be fun to explore this difference in years with the model, this seems like an important signal!
 
+## Some questions
 * I found these KC moorings: [Penn Cove bottom][https://data.kingcounty.gov/dataset/Penn-Cove-Entrance-Buoy-Raw-Data-Output-Bottom/fkix-9yyf/about_data], [Penn Cove surface][https://data.kingcounty.gov/dataset/Penn-Cove-Entrance-Buoy-Raw-Data-Output-Surface/59w7-7h7b/about_data], [Coupeville wharf][https://data.kingcounty.gov/Environment-Waste-Management/Coupeville-Wharf-Mooring-Raw-Data-Output/6trh-ufm8/about_data]. What data exists as part of the site visits (transects, profiles?) -- starting with 2017 or should I look over a longer timespan once Dakota has done more model runs?
 * What existing LO plotting code would be useful to utilize? 
