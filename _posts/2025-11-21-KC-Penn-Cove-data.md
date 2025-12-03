@@ -7,7 +7,8 @@ King County has two technical memos summarising monitoring:
 - February 2022 - August 2023: [KC Year 1 summary](https://your.kingcounty.gov/dnrp/library/2023/kcr3593/kcr3593.pdf)
 This monitoring program was launched in response to Ecology releasing the Puget Sound Nutrient General Permit (PSNGP) June 2021. Ecology's Salish Sea Model (SSM) determined Whidbey Basin out of compliance DO compliance having a DO difference with/without anthroprogenic nutrient loading >0.2 mg/L, however a lack of empirical evidence in this area. This data set is intended for 1) validating SSM predictions, 2) improving SSM and other models, 3) understanding relative importance of nutrients, climate, local factors in deep water vs. shallow embayments.
 
-- Profile casts (CT, DO, NO3, Chl, SA) processed by Dakota. Bi-monthly.
+Data collected:
+- Profile casts (CT, DO, NO3, Chl, SA) processed into [LO/obs](https://github.com/parkermac/LO/tree/main/obs) codebase by Dakota. Bi-monthly.
 - Bottles at surface, 5m, bottom for nutrient concentrations (nitrate + nitrite, ammonia, orthophosphate, silica). Bi-monthly. 
 - Moorings (DO, N, Chl) 15 minute sampling frequency at surface and bottom.
 
@@ -21,6 +22,6 @@ While we are thinking about nutrients in the Puget Sound in general as coming pr
 
 
 ## Questions
-- Any work done with processing mooring time series data?    
+- Any work done with mooring time series data?    
 - Plot something like this but with LO and Whidbey High-Res model comparison? <img width="700" alt="image" src="https://github.com/user-attachments/assets/b1de4e51-a56f-4f10-aee8-2c06498b9f4a" />
 
