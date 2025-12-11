@@ -21,7 +21,6 @@ Whidbey Basin is more impacted by freshwater as compared to the Puget Sound's ce
 While we are thinking about nutrients in the Puget Sound in general as coming primarily from the ocean, in this system we have our eyes on the Skagit river and seasonal dynamics in discharge rates as comprising big part of nutrient loading signal-- I'm curious to explore this in the data! The Puget Sound is widely considered to be nitrate limited (the biogeochemistry of phosphorous changes as salinity increases, making phosphorous less limiting in marine systems as compared to freshwater), with surface dissolved nitrate concentrations decreasing to zero in the summer due to biological productivity. Red Alders have a symbiotic relationship with nitrogen fixing bacteria in their root tubules, providing the dissolved bio-available form in high concentrations in Washington rivers. 
 
 
-## Questions
-- Any work done with mooring time series data?    
+## Questions 
 - Plot something like this but with LO and Whidbey High-Res model comparison? <img width="700" alt="image" src="https://github.com/user-attachments/assets/b1de4e51-a56f-4f10-aee8-2c06498b9f4a" />
 
