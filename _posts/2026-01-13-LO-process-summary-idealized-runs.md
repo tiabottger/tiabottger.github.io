@@ -11,7 +11,7 @@ References:
 ----------------- 
 ### Grid creation `LO/pgrid.py` 
 **Purpose:**   
-defines grid coordinates, bathymetry, boundaries, atmospheric nudging, masks, exclusions etc.
+defines grid coordinates, bathymetry, boundaries, atmospheric nudging, masks, exclusions etc.    
 **Input:**  
 calls in user specifications in **LO_user/pgrid/gfun_user.py**  
   -  **gridname**   
