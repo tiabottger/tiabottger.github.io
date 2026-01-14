@@ -3,10 +3,10 @@ Leading into my own idealized model experiments, I found it important to return 
 
 -------------
 References:
-- https://github.com/parkermac/LO/blob/main/notes/analytical_runs.md
-- https://github.com/parkermac/LO/tree/main/pgrid
-- https://github.com/parkermac/LO_roms_user/blob/main/README.md
-- https://ajleeson.github.io/research_blog/2022/06/26/idealized-estuary-process-flowchart.html
+- [https://github.com/parkermac/LO/blob/main/notes/analytical_runs.md]
+- [https://github.com/parkermac/LO/tree/main/pgrid]
+- [https://github.com/parkermac/LO_roms_user/blob/main/README.md]
+- [https://ajleeson.github.io/research_blog/2022/06/26/idealized-estuary-process-flowchart.html]
   
 ----------------- 
 ### Grid creation `LO/pgrid.py` 
@@ -45,7 +45,7 @@ calls in user specifications in **LO_user/pgrid/gfun_user.py**
 define date range and forcings for grid, create forcing files in format that `driver_roms00.py` expects.   
 
 ***On apogee:***
-<img width="1324" height="308" alt="image" src="https://github.com/user-attachments/assets/ab6cbcc4-d2b4-4775-ad00-804aa020186f" />
+<img width="1324" alt="image" src="https://github.com/user-attachments/assets/ab6cbcc4-d2b4-4775-ad00-804aa020186f" />
 
 
 **Output:** 
