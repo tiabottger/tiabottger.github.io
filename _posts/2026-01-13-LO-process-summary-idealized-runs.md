@@ -7,6 +7,7 @@ References:
 - https://github.com/parkermac/LO/tree/main/pgrid
 - https://github.com/parkermac/LO_roms_user/blob/main/README.md
 - https://ajleeson.github.io/research_blog/2022/06/26/idealized-estuary-process-flowchart.html
+  
 ----------------- 
 ### Grid creation `LO/pgrid.py` 
 **Purpose:**   
@@ -14,9 +15,9 @@ defines grid coordinates, bathymetry, boundaries, atmospheric nudging, masks, ex
 **Input:**  
 calls in user specifications in **LO_user/pgrid/gfun_user.py**  
   -  **gridname**   
-    <img width="1316" height="76" alt="image" src="https://github.com/user-attachments/assets/deb30063-7370-4656-bdc0-34f520238a90" />
+    <img width="1316" alt="image" src="https://github.com/user-attachments/assets/deb30063-7370-4656-bdc0-34f520238a90" />
   - **grid specifications** 
-    <img width="1680" height="1120" alt="image" src="https://github.com/user-attachments/assets/f7df436d-0a1a-4afa-89c1-3f114ed769f4" />
+    <img width="1680" alt="image" src="https://github.com/user-attachments/assets/f7df436d-0a1a-4afa-89c1-3f114ed769f4" />
 
 **Output:**
 - LO_data/grids/ae0
@@ -36,7 +37,7 @@ calls in user specifications in **LO_user/pgrid/gfun_user.py**
 > *How are rivers defined?*  
 > Non-analytical runs have files created which contain information about rivers (names, gage numbers) and their channel locations, which are created by LO/pre/river1 programs.
 > For analytical cases, the river file and track is created by hand within gfun_user grid specifications:  
-> <img width="950" height="574" alt="image" src="https://github.com/user-attachments/assets/b0112eff-0937-4066-a6b1-65761264bef8" />
+> <img width="950" alt="image" src="https://github.com/user-attachments/assets/b0112eff-0937-4066-a6b1-65761264bef8" />
 
 -----------------
 ### Forcing file generation `LO/driver/driver_forcing00.py`
@@ -54,10 +55,10 @@ define date range and forcings for grid, create forcing files in format that `dr
 ## ROMS
 ### Compile 
 When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee). These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. In the header file, we can define and undefine choices we want ROMS to run with e.g.:  
-<img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
 
 ***On klone***
-<img width="1794" height="456" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
+<img width="1794" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
 
 **Output:**
 - LO/roms_user/\[ex]
@@ -67,7 +68,7 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
 ### Run `LO/driver/driver_roms00.py`
 
 ***On klone head node***
-<img width="1904" height="192" alt="image" src="https://github.com/user-attachments/assets/7b8a48b2-1a52-4eeb-a7ad-df691ae05b55" />
+<img width="1904" alt="image" src="https://github.com/user-attachments/assets/7b8a48b2-1a52-4eeb-a7ad-df691ae05b55" />
 
 **Output:**  
 in *gtagx* form   
