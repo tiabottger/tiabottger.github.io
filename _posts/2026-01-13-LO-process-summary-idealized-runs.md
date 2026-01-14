@@ -53,7 +53,7 @@ define date range and forcings for grid, create forcing files in format that `dr
 ---------------
 ## ROMS
 ### Compile 
-When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. These tell ROMS what parts of the code we want to interact with. In the header file, we can define and undefine choices we want ROMS to run with e.g.:  
+When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee). These tell ROMS what parts of the code we want to interact with. In the header file, we can define and undefine choices we want ROMS to run with e.g.:  
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
 
 ***On klone***
