@@ -53,7 +53,7 @@ define date range and forcings for grid, create forcing files in format that `dr
 ---------------
 ## ROMS
 ### Compile 
-When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee). These tell ROMS what parts of the code we want to interact with. In the header file, we can define and undefine choices we want ROMS to run with e.g.:  
+When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee). These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. In the header file, we can define and undefine choices we want ROMS to run with e.g.:  
 <img width="400" height="252" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
 
 ***On klone***
@@ -69,8 +69,9 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
 ***On klone head node***
 <img width="1904" height="192" alt="image" src="https://github.com/user-attachments/assets/7b8a48b2-1a52-4eeb-a7ad-df691ae05b55" />
 
-
-
+**Output:**  
+in *gtagx* form   
+\[gridname]_\[tag]\_\[ex]
 
 
 
