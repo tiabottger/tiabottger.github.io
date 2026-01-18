@@ -19,6 +19,8 @@ calls in user specifications in **LO_user/pgrid/gfun_user.py**
   - **grid specifications** 
     <img width="1680" alt="image" src="https://github.com/user-attachments/assets/f7df436d-0a1a-4afa-89c1-3f114ed769f4" />
 
+run series of commands in LO/pgrid to create grid files: 
+
 **Output:**
 - LO_data/grids/ae0
   - S_COORDINATE_INFO.csv
@@ -34,24 +36,11 @@ calls in user specifications in **LO_user/pgrid/gfun_user.py**
  
 ***Copy `LO_data/grids/ae0` to apogee and klone***
 
-> *How are rivers defined?*  
+> **How are rivers defined?**  
 > Non-analytical runs have files created which contain information about rivers (names, gage numbers) and their channel locations, which are created by LO/pre/river1 programs.
 > For analytical cases, the river file and track is created by hand within gfun_user grid specifications:  
 > <img width="950" alt="image" src="https://github.com/user-attachments/assets/b0112eff-0937-4066-a6b1-65761264bef8" />
 
------------------
-### Forcing file generation `LO/driver/driver_forcing00.py`
-**Purpose:** 
-define date range and forcings for grid, create forcing files in format that `driver_roms00.py` expects.   
-
-***On apogee:***
-<img width="1324" alt="image" src="https://github.com/user-attachments/assets/ab6cbcc4-d2b4-4775-ad00-804aa020186f" />
-
-
-**Output:** 
-- LO_output/forcing/ae0
-  - f2020.01.01 forcing files in single day folders
-    
 ---------------
 ### Forcing instructions for ROMS: `dot_in` files  
 **Purpose:**
@@ -61,13 +50,31 @@ define date range and forcings for grid, create forcing files in format that `dr
 - update `make_dot_in` with number of cores you plan to use on klone
 - adjust output variables and file to accept relevant forcing in `BLANK.in` line 498
 
+***Output:***
+-LO_user/dot_in/\[gridname]_\[tag]\_\[ex]
 ***Commit/push changes to LO_user in GitHub***
+
+----------------
+### Forcing file generation `LO/driver/driver_forcing00.py`
+**Purpose:** 
+define date range and forcings for grid, create forcing files in format that `driver_roms00.py` expects.   
+
+***On apogee:***   
+***Pull LO_user changes***
+<img width="1324" alt="image" src="https://github.com/user-attachments/assets/ab6cbcc4-d2b4-4775-ad00-804aa020186f" />
+
+
+**Output:** 
+- LO_output/forcing/ae0
+  - f2020.01.01 forcing files in single day folders
 
 ---------------
 ## ROMS
 ### Compile 
-When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. When we have a run with biogeochemistry turned on, we will additionally have a `Fennel.h` header file. In the header file, we can define and undefine choices we want ROMS to run with. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee), with some choices in xa0.h shown below:
+When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. When we have a run with biogeochemistry turned on, we will additionally have a `Fennel.h` header file. In the header file, we can define and undefine choices we want ROMS to run with. I copied the `xa0` executable folder from Parker's LO_roms_user, with some choices in xa0.h shown below:
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
+
+***Commit/push changes to LO_roms_user in GitHub***
 
 ***On klone***
 <img width="1794" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
