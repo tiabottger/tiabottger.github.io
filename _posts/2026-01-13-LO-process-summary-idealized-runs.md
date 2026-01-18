@@ -13,7 +13,7 @@ References:
 **Purpose:**   
 defines grid coordinates, bathymetry, boundaries, atmospheric nudging, masks, exclusions etc.    
 **Input:**  
-calls in user specifications in **LO_user/pgrid/gfun_user.py**  
+calls in user specifications in **`LO_user/pgrid/gfun_user.py`**  
   -  **gridname**   
     <img width="1316" alt="image" src="https://github.com/user-attachments/assets/deb30063-7370-4656-bdc0-34f520238a90" />
   - **grid specifications** 
