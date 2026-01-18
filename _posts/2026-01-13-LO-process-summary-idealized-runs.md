@@ -48,7 +48,7 @@ run series of commands in LO/pgrid to create grid files: `start_grid`, `make_mas
 
 - update `forcing_list.csv` with forcing scripts for ocean, tides, river, atm etc.
 - update `make_dot_in` with number of cores you plan to use on klone
-- adjust output variables and file to accept relevant forcing in `BLANK.in` line 498
+- adjust output variables and file to accept relevant forcing in `BLANK.in`
 
 ***Output:***  
 - LO_user/dot_in/\[gridname]_\[tag]\_\[ex]  
