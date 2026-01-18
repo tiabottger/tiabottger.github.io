@@ -1,5 +1,5 @@
 ## LO process summary for idealized runs
-Leading into my own idealized model experiments, I found it important to return to the walkthrough for the grid `ae0` to understand where I can make changes to grid specifications and forcings. Here I summarize information I've learned about the key functions in this process for quick reference in the future. Next week I plan to add a section for creating a `dot_in` file for a ROMS run-- this allows you to adjust forcing, boundary counditions for different runs without remaking a grid.
+Leading into my own idealized model experiments, I found it important to return to the walkthrough for the grid `ae0` to understand where I can make changes to grid specifications and forcings. Here I summarize information I've learned about the key functions in this process for quick reference in the future.
 
 -------------
 References:
@@ -53,6 +53,17 @@ define date range and forcings for grid, create forcing files in format that `dr
   - f2020.01.01 forcing files in single day folders
     
 ---------------
+### Forcing instructions for ROMS: `dot_in` files  
+**Purpose:**
+`dot_in` files tell ROMS how many input forcing files we are providing and where to find these input files. Within these you can specify how often to output history files and how to partition the model grid when running on a different number of cores. Adjust forcing and boundary conditions without remaking a grid.
+
+- update `forcing_list.csv` with forcing scripts for ocean, tides, river, atm etc.
+- update `make_dot_in` with number of cores you plan to use on klone
+- adjust output variables and file to accept relevant forcing in `BLANK.in` line 498
+
+***Commit/push changes to LO_user in GitHub***
+
+---------------
 ## ROMS
 ### Compile 
 When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our executable. These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. When we have a run with biogeochemistry turned on, we will additionally have a `Fennel.h` header file. In the header file, we can define and undefine choices we want ROMS to run with. I copied the `xa0` executable folder from Parker's LO_roms_user (and push and pulled with github to apogee), with some choices in xa0.h shown below:
@@ -66,6 +77,7 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
   - bld.log (where command line output is written to, can check for progress while compiles)
   - Build_romsM
 
+-----------
 ### Run `LO/driver/driver_roms00.py`
 
 ***On klone head node***
