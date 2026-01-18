@@ -19,7 +19,7 @@ calls in user specifications in **`LO_user/pgrid/gfun_user.py`**
   - **grid specifications** 
     <img width="1680" alt="image" src="https://github.com/user-attachments/assets/f7df436d-0a1a-4afa-89c1-3f114ed769f4" />
 
-run series of commands in LO/pgrid to create grid files: 
+run series of commands in LO/pgrid to create grid files: `start_grid`, `make_mask`, `carve_rivers`, `smooth_grid`, `make_extras`, `grid_to_LO`
 
 **Output:**
 - LO_data/grids/ae0
@@ -31,7 +31,7 @@ run series of commands in LO/pgrid to create grid files:
   - nudgecoef.nc
 - LO_output/pgrid/ae0
   - choices.p
-  - grid_m01_r01_s01_x01.nc this is created in a sequence of `start_grid`, `make_mask` (m), `carve_rivers` (r), `smooth_grid` (s), `make_extras` (x)
+  - grid_m01_r01_s01_x01.nc *indexing indicating changes to: mask (m), river (r), smoothing (s), or extras (x)*
   - roms_river_info.csv
  
 ***Copy `LO_data/grids/ae0` to apogee and klone***
@@ -50,8 +50,8 @@ run series of commands in LO/pgrid to create grid files:
 - update `make_dot_in` with number of cores you plan to use on klone
 - adjust output variables and file to accept relevant forcing in `BLANK.in` line 498
 
-***Output:***
--LO_user/dot_in/\[gridname]_\[tag]\_\[ex]
+***Output:***  
+- LO_user/dot_in/\[gridname]_\[tag]\_\[ex]  
 ***Commit/push changes to LO_user in GitHub***
 
 ----------------
