@@ -79,11 +79,20 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
 ***On klone***
 <img width="1794" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
 
+aliases:
+```
+alias mli='module load intel/oneAPI'
+alias compile='./build_roms.sh -j 10 < /dev/null > bld.log &'
+```
+
 **Output:**
 - LO/roms_user/\[ex]
   - bld.log (where command line output is written to, can check for progress while compiles)
   - Build_romsM
     - this should be full of files! make sure wait until see a message like `ar: creating /gscratch/macc/tbottger/LO_roms_user/xa0/Build_romsM/libROMS.a`
+
+> Can run 
+>`squeue -A macc` to check on job status
 
 -----------
 ### Run `LO/driver/driver_roms00.py`
