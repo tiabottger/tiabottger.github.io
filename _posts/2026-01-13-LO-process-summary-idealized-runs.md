@@ -96,7 +96,9 @@ alias compile='./build_roms.sh -j 10 < /dev/null > bld.log &'
 
 -----------
 ### Run `LO/driver/driver_roms00.py`
-
+**Purpose:** 
+ load forcing files from apogee, make the dot_in file for each day, make the sbatch script, run roms for each day, send the roms output to apogee
+ 
 ***On klone head node***
 <img width="1904" alt="image" src="https://github.com/user-attachments/assets/7b8a48b2-1a52-4eeb-a7ad-df691ae05b55" />
 
@@ -105,9 +107,13 @@ For the old "compute" nodes you would want to use -np as some integer times 40, 
 For the new cpu-g2 nodes you would want to use -np as some integer times 32, e.g. 32, 64, 160, 192. It can be more reliable to have a job on one node, so 192 is a good maximum value.
 
 **Output:**  
-in *gtagx* form   
-\[gridname]_\[tag]\_\[ex]
+On klone:  
+LO_roms\[gridname]_\[tag]\_\[ex]
+- f2020.01.01 output files in single day folders
 
+On apogee:   
+LO_roms\[gridname]_\[tag]\_\[ex]
+- f2020.01.01 output files in single day folders
 
 
 
