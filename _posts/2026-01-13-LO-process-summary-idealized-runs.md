@@ -90,6 +90,10 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
 ***On klone head node***
 <img width="1904" alt="image" src="https://github.com/user-attachments/assets/7b8a48b2-1a52-4eeb-a7ad-df691ae05b55" />
 
+For the old "compute" nodes you would want to use -np as some integer times 40, e.g. 40, 80, 200. If you use 200 for example your job will be using 5 nodes, which you can confirm sith squeue.
+
+For the new cpu-g2 nodes you would want to use -np as some integer times 32, e.g. 32, 64, 160, 192. It can be more reliable to have a job on one node, so 192 is a good maximum value.
+
 **Output:**  
 in *gtagx* form   
 \[gridname]_\[tag]\_\[ex]
