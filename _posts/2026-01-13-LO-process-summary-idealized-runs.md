@@ -108,12 +108,12 @@ For the new cpu-g2 nodes you would want to use -np as some integer times 32, e.g
 
 **Output:**  
 On klone:  
-LO_roms\[gridname]_\[tag]\_\[ex]
-- f2020.01.01 output files in single day folders
+- LO_roms\[gridname]_\[tag]\_\[ex]
+  - f2020.01.01 output files in single day folders
 
 On apogee:   
-LO_roms\[gridname]_\[tag]\_\[ex]
-- f2020.01.01 output files in single day folders
+- LO_roms\[gridname]_\[tag]\_\[ex]
+  - f2020.01.01 output files in single day folders
 
 
 
