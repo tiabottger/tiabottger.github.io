@@ -83,6 +83,7 @@ When we compile ROMS, we need a `build_roms.sh` and `.h` header file for our exe
 - LO/roms_user/\[ex]
   - bld.log (where command line output is written to, can check for progress while compiles)
   - Build_romsM
+    - this should be full of files! make sure wait until see a message like `ar: creating /gscratch/macc/tbottger/LO_roms_user/xa0/Build_romsM/libROMS.a`
 
 -----------
 ### Run `LO/driver/driver_roms00.py`
