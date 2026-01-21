@@ -78,6 +78,8 @@ calls in forcing scripts from **`LO/forcing/[FRC]/make_forcing_main.py`**
 ***Pull LO_user changes***
 <img width="1324" alt="image" src="https://github.com/user-attachments/assets/ab6cbcc4-d2b4-4775-ad00-804aa020186f" />
 
+> **Note:** -s new for ocean start type sets up initial conditions
+
 **Output:** 
 - LO_output/forcing/ae0
   - f2020.01.01 forcing files in single day folders
@@ -111,7 +113,7 @@ alias compile='./build_roms.sh -j 10 < /dev/null > bld.log &'
   - Build_romsM
     - this should be full of files! make sure wait until see a message like `ar: creating /gscratch/macc/tbottger/LO_roms_user/xa0/Build_romsM/libROMS.a`
 
-> Can run: 
+> **Can run:** 
 >`squeue -A macc -u tbottger` to check on job status    
 -----------
 ### Run `LO/driver/driver_roms00.py`
