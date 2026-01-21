@@ -1,7 +1,8 @@
 ## Successful idealized runs!  
 My goal for my first idealized estuary mini experiment was to investigate how tides propogate into an estuary as bathymetry shallows. In practicing setting up for a run, I also ran the "default" version with river forcing, which will provide a nice comparison point.
 
-I successfully ran two versions of forcing on the `ae0` idealized estuary grid, one with and one without river input: 
+I successfully ran two versions of forcing on the `ae0` idealized estuary grid, one with and one without river input:    
+
 | Forcing | t0 | tnoriv |
 | --- | --- | --- |
 | **River** | flow rate = 1000 m3 s-1 | **flow rate = 0 m3 s-1**|
