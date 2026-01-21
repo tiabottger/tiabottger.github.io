@@ -34,22 +34,27 @@ Fig. 1: Hourly animation with 1000 m3 s-1 river input
 Fig. 2: Hourly animation with no river input
 
 I had fun digging into existing plotting code and modifying it for my idealized grid! These initial movies show that my forcing conditions worked-- there is no river input and salinity remains at zero for the tnoriv run.  
-### Questions for next steps
-- 
+### Next steps
+I'd like to plot a time series of sea surface height at several extractions along the lat = 45 degree estuary midline:
+- boundary lon = -2: to confirm tidal forcing
+- estuary mouth lon = 0: should be consistent with my forcing
+- middle of the estuary lon = 0.5
+- river lon = 1.1   
+But am having trouble successfully running a mooring extraction on my model output.
+
+This will help me confirm whether I am capturing a spring-neap tidal cycle in my forcing, or if I need to modify the forcing code. I took a look into the tideA0 forcing file, and it was unclear to me how the amplitude is modulated depending on the timestamp. I'm assuming the date ranges for this analytical case are somewhat arbitrary since real tide data isn't being used, but I'm unsure. 
+
+For meaningful further exploration with the river input case, I likely need to modify my ocean forcing initial condition. In the time range captured in the video you can start to see interesting behavior towards the end, but it takes a while to set up from the starting condition of salinity=30 everywhere.
+
 ### Some theory and thoughts
 #### Resonance
 A simple formula can be used to determine resonant period given a depth and wavelength in a system:  
 $T = \frac{4L}{\sqrt{gh}}$  
 in which L is estuary length and h is the mean depth of the estuary. For a mean depth of about 10 m, this would give an estuary with a resonant period of about 1.11 hours. If tidal forcing were to match this period, we would expect resonance for this estuary and runaway tidal amplitudes. Those would be really quick tides (a tidal period is around 12.42 hours), so our estuary is in the clear-- we won't see amplitudes getting away from us! 
  
-#### Sea surface height  
-I'd like to plot a time series of sea surface height at several extractions along the lat = 45 degree estuary midline:
-- boundary lon = -2: to confirm tidal forcing
-- estuary mouth lon = 0: should be consistent with my forcing
-- middle of the estuary lon = 0.5
-- river lon = 1.1
-
-I'm looking to see a phase shift and amplitude increase as the bathymetry shallows. 
+#### Sea-surface height  
+If I plot extractions as a timeseries on a single plot I'd expect to see a phase shift (due to time lag of tides arriving) and amplitude increase as the bathymetry shallows into the estuary:  
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/6832ddad-32ab-49a1-a64d-84c1cb9e522e" />   
 
 #### Velocities
-Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary frictional forces. I'd expect velocities to be at a max at some intermediate value. 
+Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary they will eventually slow to zero due to friction. I'd expect velocities to be at a max at some intermediate value?
