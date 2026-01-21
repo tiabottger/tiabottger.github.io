@@ -5,11 +5,11 @@ I successfully ran two versions of forcing on the `ae0` idealized estuary grid, 
 | Forcing | t0 | tnoriv |
 | --- | --- | --- |
 | **River** | flow rate = 1000 m3 s-1 | **flow rate = 0 m3 s-1**|
-|       | salinity = 0 | same...
-|       | temp = 10
-| **Ocean** at t=0| salinity = 30 everywhere (including in estuary)
-|       | temp = 10 
-| **Tides** | period = 12.42 hrs 
+|       | salinity = 0 | same... |
+|       | temp = 10 | |
+| **Ocean** at t=0| salinity = 30 everywhere (including in estuary) | |
+|       | temp = 10 | |
+| **Tides** | period = 12.42 hrs | |
 
 Atmospheric forcing and biology are turned off.   
 I ran this over 2 weeks: from 2020.01.01 to 2020.01.15.
@@ -26,6 +26,11 @@ Here the z scale is maxed out at 20 m so you can better see the estuary bathymet
 ### Initial plots
 <video src="https://github.com/tiabottger/tiabottger.github.io/_posts/figures/2026.01.20/ae0_t0_xa0.mp4" controls="controls" style="max-width: 700px;"></video>
 <video src="https://github.com/tiabottger/tiabottger.github.io/_posts/figures/2026.01.20/ae0_tnoriv_xa0.mp4" controls="controls" style="max-width: 700px;"></video>
+
+<video controls style="max-width: 700px;">
+  <source src="/_posts/figures/2026.01.20/ae0_tnoriv_xa0.mp4" type="video/mp4">
+</video>
+
 I had fun digging into existing plotting code and modifying it for my idealized grid! These initial movies show that my forcing conditions worked-- there is no river input and salinity remains at zero for the tnoriv run.  
 ### Some theory and thoughts
 #### Resonance
@@ -43,4 +48,4 @@ I'd like to plot a time series of sea surface height at several extractions alon
 I'm looking to see a phase shift and amplitude increase as the bathymetry shallows. 
 
 #### Velocities
-Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary frictional forces. I'd expect velocities to be at a max at some intermediate value
+Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary frictional forces. I'd expect velocities to be at a max at some intermediate value. 
