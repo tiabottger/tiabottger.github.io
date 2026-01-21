@@ -28,7 +28,7 @@ Here the z scale is maxed out at 20 m so you can better see the estuary bathymet
 
 ### Initial plots
 
-<p style="text-align:center;"><video src="https://github.com/user-attachments/assets/87583462-3eee-4d46-bc98-ea4c4be2956b" controls="controls" style="max-width: 800px;"></video>
+<p style="text-align:center;"><video src="https://github.com/user-attachments/assets/93f60851-7d90-42ae-b466-96e41867f9ee" controls="controls" style="max-width: 800px;"></video>
 Fig. 1: Hourly animation with 1000 m3 s-1 river input
  </p>
 <p style="text-align:center;"><video src="https://github.com/user-attachments/assets/1b33add5-94d5-4143-9806-16f133b36d4a" controls="controls" style="max-width: 800px;"></video>
