@@ -38,10 +38,10 @@ I had fun digging into existing plotting code and modifying it for my idealized 
 
 ### Next steps
 I'd like to plot a time series of sea surface height at several extractions along the lat = 45 degree estuary midline:
-- boundary lon = -2: to confirm tidal forcing
-- estuary mouth lon = 0: should be consistent with my forcing
-- middle of the estuary lon = 0.5
-- river lon = 1.1   
+- boundary (lon = -2): to confirm tidal forcing
+- estuary mouth (lon = 0): should be consistent with my forcing
+- middle of the estuary (lon = 0.5)
+- river (lon = 1.1)   
 
 But am having trouble successfully running a mooring extraction on my model output to do so.
 
