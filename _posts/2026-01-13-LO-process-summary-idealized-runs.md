@@ -114,7 +114,8 @@ alias compile='./build_roms.sh -j 10 < /dev/null > bld.log &'
     - this should be full of files! make sure wait until see a message like `ar: creating /gscratch/macc/tbottger/LO_roms_user/xa0/Build_romsM/libROMS.a`
 
 > **Can run:** 
->`squeue -A macc -u tbottger` to check on job status    
+>`squeue -A macc -u tbottger` to check on job status
+
 -----------
 ### Run `LO/driver/driver_roms00.py`
 **Purpose:** 
