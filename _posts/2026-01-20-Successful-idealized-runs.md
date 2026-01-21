@@ -66,5 +66,7 @@ in which L is estuary length and h is the mean depth of the estuary. For a mean 
 If I plot extractions as a timeseries on a single plot I'd expect to see a phase shift (due to time lag of tides arriving) and amplitude increase as the bathymetry shallows into the estuary:  
 <img width="300"  alt="image" src="https://github.com/user-attachments/assets/6832ddad-32ab-49a1-a64d-84c1cb9e522e" />   
 
+Something interesting is happening where the depth levels out to around 5 meters...
+
 #### Velocities
 Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary they will eventually slow to zero due to friction. I'd expect velocities to be at a max at some intermediate value? Could play around with ROMS coefficient of bed friction value?
