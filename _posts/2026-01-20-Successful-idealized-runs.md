@@ -24,6 +24,7 @@ Here the z scale is maxed out at 20 m so you can better see the estuary bathymet
 **Along estuary**, the depth shallows at a rate of $\frac{dz}{dx} = \frac{20}{100,000} = 0.0002$. This would give a depth of 0 at 100km, however the last quarter of the estuary (at x = 75 km) has been set to a constant depth of 5 m where the river track comes in.  
 **Across estuary**, the depth shallows more rapidly at a rate of $\frac{dz}{dx} = \frac{20}{10,000} = 0.002$.  
 **The estuary is 100 km long with a mouth 20 km across.**
+
 ### Initial plots
 
 
@@ -34,6 +35,7 @@ Fig. 1: Hourly animation with 1000 m3 s-1 river input
 Fig. 2: Hourly animation with no river input
 
 I had fun digging into existing plotting code and modifying it for my idealized grid! These initial movies show that my forcing conditions worked-- there is no river input and salinity remains at zero for the tnoriv run.  
+
 ### Next steps
 I'd like to plot a time series of sea surface height at several extractions along the lat = 45 degree estuary midline:
 - boundary lon = -2: to confirm tidal forcing
