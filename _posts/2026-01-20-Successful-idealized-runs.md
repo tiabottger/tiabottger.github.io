@@ -28,13 +28,12 @@ Here the z scale is maxed out at 20 m so you can better see the estuary bathymet
 
 ### Initial plots
 
-
-
 <p style="text-align:center;"><video src="https://github.com/user-attachments/assets/87583462-3eee-4d46-bc98-ea4c4be2956b" controls="controls" style="max-width: 800px;"></video>
 Fig. 1: Hourly animation with 1000 m3 s-1 river input
+ </p>
 <p style="text-align:center;"><video src="https://github.com/user-attachments/assets/1b33add5-94d5-4143-9806-16f133b36d4a" controls="controls" style="max-width: 800px;"></video>
 Fig. 2: Hourly animation with no river input
-
+</p>
 I had fun digging into existing plotting code and modifying it for my idealized grid! These initial movies show that my forcing conditions worked-- there is no river input and salinity remains at zero for the tnoriv run.  
 
 ### Next steps
@@ -43,7 +42,8 @@ I'd like to plot a time series of sea surface height at several extractions alon
 - estuary mouth lon = 0: should be consistent with my forcing
 - middle of the estuary lon = 0.5
 - river lon = 1.1   
-But am having trouble successfully running a mooring extraction on my model output.
+
+But am having trouble successfully running a mooring extraction on my model output to do so.
 
 This will help me confirm whether I am capturing a spring-neap tidal cycle in my forcing, or if I need to modify the forcing code. I took a look into the tideA0 forcing file, and it was unclear to me how the amplitude is modulated depending on the timestamp. I'm assuming the date ranges for this analytical case are somewhat arbitrary since real tide data isn't being used, but I'm unsure. 
 
@@ -57,7 +57,9 @@ For meaningful further exploration with the river input case, I likely need to m
 ### Some theory and thoughts
 #### Resonance
 A simple formula can be used to determine resonant period given a depth and wavelength in a system:  
-$T = \frac{4L}{\sqrt{gh}}$  
+$$
+T = \frac{4L}{\sqrt{gh}}
+$$  
 in which L is estuary length and h is the mean depth of the estuary. For a mean depth of about 10 m, this would give an estuary with a resonant period of about 1.11 hours. If tidal forcing were to match this period, we would expect resonance for this estuary and runaway tidal amplitudes. Those would be really quick tides (a tidal period is around 12.42 hours), so our estuary is in the clear-- we won't see amplitudes getting away from us! 
  
 #### Sea-surface height  
