@@ -24,8 +24,8 @@ Here the z scale is maxed out at 20 m so you can better see the estuary bathymet
 **Across estuary**, the depth shallows more rapidly at a rate of $\frac{dz}{dx} = \frac{20}{10,000} = 0.002$.  
 **The estuary is 100 km long with a mouth 20 km across.**
 ### Initial plots
-<video src="figures/2026.01.20/ae0_t0_xa0.mp4" width="600"></video>
-<video src="figures/2026.01.20/ae0_tnoriv_xa0.mp4" width="600"></video>
+<video src="https://github.com/tiabottger/tiabottger.github.io/_posts/figures/2026.01.20/ae0_t0_xa0.mp4" controls="controls" style="max-width: 700px;"></video>
+<video src="https://github.com/tiabottger/tiabottger.github.io/_posts/figures/2026.01.20/ae0_tnoriv_xa0.mp4" controls="controls" style="max-width: 700px;"></video>
 I had fun digging into existing plotting code and modifying it for my idealized grid! These initial movies show that my forcing conditions worked-- there is no river input and salinity remains at zero for the tnoriv run.  
 ### Some theory and thoughts
 #### Resonance
@@ -33,11 +33,14 @@ A simple formula can be used to determine resonant period given a depth and wave
 $T = \frac{4L}{\sqrt{gh}}$  
 in which L is estuary length and h is the mean depth of the estuary. For a mean depth of about 10 m, this would give an estuary with a resonant period of about 1.11 hours. If tidal forcing were to match this period, we would expect resonance for this estuary and runaway tidal amplitudes. Those would be really quick tides (a tidal period is around 12.42 hours), so our estuary is in the clear-- we won't see amplitudes getting away from us! 
  
-### Sea surface height  
-I'd like to plot a time series of sea surface height at several extractions along the 45 degree estuary midline:
-- boundary lat = 45, lon = -2: to confirm tidal forcing
-- ocean lat = 45, lon = -1: should be consistent with my forcing
-- estuary mouth lat = 45, lon = 0:  
+#### Sea surface height  
+I'd like to plot a time series of sea surface height at several extractions along the lat = 45 degree estuary midline:
+- boundary lon = -2: to confirm tidal forcing
+- estuary mouth lon = 0: should be consistent with my forcing
+- middle of the estuary lon = 0.5
+- river lon = 1.1
 
-### Velocities
-Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary frictional forces. I'd expect velocities 
+I'm looking to see a phase shift and amplitude increase as the bathymetry shallows. 
+
+#### Velocities
+Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary frictional forces. I'd expect velocities to be at a max at some intermediate value
