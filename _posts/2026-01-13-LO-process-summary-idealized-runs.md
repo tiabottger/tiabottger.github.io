@@ -141,5 +141,8 @@ On apogee:
 - LO_roms/\[gridname]_\[tag]\_\[ex]
   - f2020.01.01 output files in single day folders
 
-***Copy `LO_roms/\[gridname]_\[tag]\_\[ex] to computer to make plots, or run plotting scripts from apogee***
+***Copy `LO_roms/\[gridname]_\[tag]\_\[ex] to computer to make plots, or run plotting scripts from apogee***   
+
+can do this with a command like:  
+`scp -r tbottger@apogee.ocean.washington.edu:/dat2/tbottger/LO_roms/ae0_t0_xa0 .` where the destination `.` is the current directory
 
