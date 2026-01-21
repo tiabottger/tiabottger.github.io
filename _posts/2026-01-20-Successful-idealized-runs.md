@@ -44,6 +44,11 @@ But am having trouble successfully running a mooring extraction on my model outp
 
 This will help me confirm whether I am capturing a spring-neap tidal cycle in my forcing, or if I need to modify the forcing code. I took a look into the tideA0 forcing file, and it was unclear to me how the amplitude is modulated depending on the timestamp. I'm assuming the date ranges for this analytical case are somewhat arbitrary since real tide data isn't being used, but I'm unsure. 
 
+Once I have a better sense for my tidal forcing I can also create plots at tidal snapshots:
+- spring/neap ebb tide
+- spring/neap flood tide
+- spring/neap slack tide
+
 For meaningful further exploration with the river input case, I likely need to modify my ocean forcing initial condition. In the time range captured in the video you can start to see interesting behavior towards the end, but it takes a while to set up from the starting condition of salinity=30 everywhere.
 
 ### Some theory and thoughts
@@ -57,4 +62,4 @@ If I plot extractions as a timeseries on a single plot I'd expect to see a phase
 <img width="300"  alt="image" src="https://github.com/user-attachments/assets/6832ddad-32ab-49a1-a64d-84c1cb9e522e" />   
 
 #### Velocities
-Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary they will eventually slow to zero due to friction. I'd expect velocities to be at a max at some intermediate value?
+Estuaries are a machine for amplifying tidal currents because they are so shallow, however as tides propogate further into the estuary they will eventually slow to zero due to friction. I'd expect velocities to be at a max at some intermediate value? Could play around with ROMS coefficient of bed friction value?
