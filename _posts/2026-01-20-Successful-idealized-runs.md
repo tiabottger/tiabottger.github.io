@@ -6,10 +6,10 @@ I successfully ran two versions of forcing on the `ae0` idealized estuary grid, 
 | Forcing | t0 | tnoriv |
 | --- | --- | --- |
 | **River** | flow rate = 1000 m3 s-1 | **flow rate = 0 m3 s-1**|
-|       | salinity = 0 | same... |
-|       | temp = 10 | |
+|       | salinity = 0 | n/a |
+|       | temp = 10 | n/a |
 | **Ocean** at t=0| salinity = 30 everywhere (including in estuary) | |
-|       | temp = 10 | |
+|       | temp = 10 | same... |
 | **Tides** | period = 12.42 hrs | |
 
 Atmospheric forcing and biology are turned off.   
