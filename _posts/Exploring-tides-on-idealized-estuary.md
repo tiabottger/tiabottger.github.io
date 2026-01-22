@@ -4,6 +4,7 @@ Bigger in Tacoma, standing wave envelope
 
 ### Tidal consituents
 Components to tidal cycle: M2 main one, S2 from sun.
+https://tidesandcurrents.noaa.gov/about_harmonic_constituents.html
 
 ### Amplitude
 
