@@ -55,6 +55,8 @@ Once I have a better sense for my tidal forcing I can also create plots at tidal
 For meaningful further exploration with the river input case, I likely need to modify my ocean forcing initial condition. In the time range captured in the video you can start to see interesting behavior towards the end, but it takes a while to set up from the starting condition of salinity=30 everywhere.
 
 ### Some theory and thoughts
+- For direct water height comparison, should rerun setting salinity to 0 instead of flow to 0 for amplitude comparison, since incoming flow from river changes tidal amplitude signal.
+  
 #### Resonance
 A simple formula can be used to determine resonant period given a depth and wavelength in a system:  
 $$
