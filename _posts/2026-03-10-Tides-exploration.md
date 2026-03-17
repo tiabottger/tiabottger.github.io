@@ -18,7 +18,7 @@ Tidal forcing for the analytical case is created in the script `forcing/tideA0/m
 <img width="400" alt="ae0_grid_extraction" src="https://github.com/user-attachments/assets/6bb3f43a-b458-44de-99bb-832145bf5eb7" />
 <img width="700" alt="ae0_tideextraction" src="https://github.com/user-attachments/assets/18d73530-7da2-4a25-8c3d-d1468bb7e959" />  
 
-My idealized estuary has the expected phase shift and quite an amplification!  
+My idealized estuary exhibits the expected phase shift and quite an amplification!  
 
 ### Tides in the Puget Sound
 While I'm looking at an idealized estuary, I want to bring everything I am learning back to the Puget Sound context. My idealized estuary removes the deep glacially carved constrictions and complexity of the Puget Sound's fjords, as if I took a knife and cut out a slice of Puget Sound pie. But make that a very shallow slice, because the mean depth of my estuary is about 10 m while the Puget Sound is about 140 m depth on average (very deep!). The entrance into my estuary roughly maps to the Strait of Juan de Fuca (20 km across), and the extent of my estuary (100 km long) is about from Admiralty inlet to Tacoma. Because it is less volume the increase in amplitude is more pronounced. 
