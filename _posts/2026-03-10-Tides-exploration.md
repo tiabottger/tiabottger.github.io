@@ -11,7 +11,7 @@ The difference between these two periods superimposed creates the two week [spri
 
 You can imagine other constituents adding complexity as Earth's orbit around the sun is elliptical, and it is moreover tilted on its axis. The next largest component is **SA**, solar annual with a period of a year or 365.25 days for Earth to complete an entire orbit. There are 37 harmonic constituents capturing the periodic nature of changing gravitational forces, all of these cosine curves adding up to the complex curve of highs and lows of tides predicted accurately far into the future. But on a shorter term we can simplify things and say tides have a period of about 12.42 hours, because their largest gravitational influence is the moon M2 component being closest to the Earth.
 #### How do we form our tidal forcing?
-Tidal forcing for the analytical case is created in the script 'forcing/tideA0/make_forcing_main'. This creates a spring neap tidal cycle by defining M2 and S2 periods and initial amplitudes of 0.75 and 0.25 for their relative contributions (M2 accounting for 75% of the tidal signal). The result forced over two weeks (from 2020.01.01 to 2020.01.15.) is as shown:
+Tidal forcing for the analytical case is created in the script `forcing/tideA0/make_forcing_main`. This creates a spring neap tidal cycle by defining M2 and S2 periods and initial amplitudes of 0.75 and 0.25 for their relative contributions (M2 accounting for 75% of the tidal signal). The result forced over two weeks (from 2020.01.01 to 2020.01.15.) is as shown:
 <img width="800" alt="ae0_tideextraction_boundary" src="https://github.com/user-attachments/assets/f81e01e6-9f33-4554-85a1-14254551b633" />
 
 ### Tidal extractions
