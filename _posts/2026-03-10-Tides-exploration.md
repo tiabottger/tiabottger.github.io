@@ -1,0 +1,27 @@
+
+## Tides exploration
+Now that I have created model output forced by tides only, I want to take a moment to learn about tides using model output to facilitate my learning exploration!
+
+### Tidal consituents
+Tides are created by the gravitational pull from the moon and sun, whose relative effect changes in relation to Earth's orbit. There are many [harmonic tidal constituents](https://tidesandcurrents.noaa.gov/about_harmonic_constituents.html), the periodic motions of the Earth, sun, and moon, that have been identified which together describe the gravitational tug felt by tides at a given time and location. The amplitude of the gravitational force is based mass and the distance between these objects, with peaks when the distance shrinks. Standing in one place on the Earth, we see the sun and moon "setting" as they draw further away from us due to the spin of the Earth on its axis. The largest constituents are those we are most familiar with in our daily life:
+- **M2:** the largest lunar constituent. The gravitational pull of the moon as the Earth spins on its axis. The period of M2 is 12.42 hours. The Earth rotates on its axis once every 24 hours, and in the time it takes to complete this orbit the moon has orbited 50 minutes on its monthly orbit path relative to the Earth's starting point. So Earth needs an additional 50 minutes to "catch-up" to the position closest to the moon. Hence M2 has two peaks every 24 hours and 50 minutes.
+- **S2:** the largest solar constituent. The gravitational pull of the sun as the Earth spins on its axis. The period of M2 is 12 hours, the Earth is closest to the sun twice every 24 hours.
+
+The difference between these two periods superimposed creates the two week [spring-neap tidal cycle](https://oceanservice.noaa.gov/facts/springtide.html) (half the moon's monthly orbit). When the moon and sun are lined up, during a full moon or new moon, the gravitational force of both perfectly add/subtract to create stronger tides known as spring tides. During a spring tide tides "spring forth" and there are the largest differences between ebb and flood and the strongest currents. When the sun and moon are 90 degrees from eachother, tides are more moderate and known as neap tides.
+
+You can imagine other constituents adding complexity as Earth's orbit around the sun is elliptical, and it is moreover tilted on its axis. The next largest component is **SA**, solar annual with a period of a year or 365.25 days for Earth to complete an entire orbit. There are 37 harmonic constituents capturing the periodic nature of changing gravitational forces, all of these cosine curves adding up to the complex curve of highs and lows of tides predicted accurately far into the future. But on a shorter term we can simplify things and say tides have a period of about 12.42 hours, because their largest gravitational influence is the moon M2 component being closest to the Earth.
+#### How do we form our tidal forcing?
+Tidal forcing for the analytical case is created in the script 'forcing/tideA0/make_forcing_main'. This creates a spring neap tidal cycle by defining M2 and S2 periods and initial amplitudes of 0.75 and 0.25 for their relative contributions (M2 accounting for 75% of the tidal signal). The result forced over two weeks (from 2020.01.01 to 2020.01.15.) is as shown:
+<img width="800" alt="ae0_tideextraction_boundary" src="https://github.com/user-attachments/assets/f81e01e6-9f33-4554-85a1-14254551b633" />
+
+### Tidal extractions
+<img width="400" alt="ae0_grid_extraction" src="https://github.com/user-attachments/assets/6bb3f43a-b458-44de-99bb-832145bf5eb7" />
+<img width="700" alt="ae0_tideextraction" src="https://github.com/user-attachments/assets/18d73530-7da2-4a25-8c3d-d1468bb7e959" />  
+
+My idealized estuary has the expected phase shift and quite an amplification!  
+
+### Tides in the Puget Sound
+While I'm looking at an idealized estuary, I want to bring everything I am learning back to the Puget Sound context. My idealized estuary removes the deep glacially carved constrictions and complexity of the Puget Sound's fjords, as if I took a knife and cut out a slice of Puget Sound pie. But make that a very shallow slice, because the mean depth of my estuary is about 10 m while the Puget Sound is about 140 m depth on average (very deep!). The entrance into my estuary roughly maps to the Strait of Juan de Fuca (20 km across), and the extent of my estuary (100 km long) is about from Admiralty inlet to Tacoma. Because it is less volume the increase in amplitude is more pronounced. In the Puget Sound, constrictions and sills are what makes things really interesting and I've removed these!! Deception Pass is where we see the strongest currents at >3.8 m/s, with Tacoma narrows having ~3.4 m/s and Admiralty inlet ~2.2 m/s speeds.
+
+Looking at tides in the Puget Sound we see bigger changes in tidal range further inland, so [Tacoma](https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9446484&units=metric&bdate=20260309&edate=20260311&timezone=LST/LDT&clock=12hour&datum=MLLW&interval=hilo&action=dailychart) has larger tides in comparison to [Admiralty Inlet](https://tidesandcurrents.noaa.gov/noaatidepredictions.html?id=9447905&units=metric&bdate=20260309&edate=20260311&timezone=LST/LDT&clock=12hour&datum=MLLW&interval=hilo&action=dailychart), the main entrance into Puget Sound. There is also similarly a phase shift as the high tide arrives later.
+
