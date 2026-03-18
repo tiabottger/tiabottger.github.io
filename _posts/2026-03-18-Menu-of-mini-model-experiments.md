@@ -4,7 +4,7 @@
 I want to use this blog post to track ideas for LiveOcean learning.
 
 #### Estuarine circulation on idealized grid
-*Motivation:* How do boundary conditions/initial conditions change the magnitude of exchange flow? This magnitude might be a point of sensitivity when comparing to SalishSeaCast and Ecology's Salish Sea Model, as this controls nutrients that are coming in from the ocean at depth (far and away the largest source of nutrient loading in Puget Sound). Explore tidally variable stratification over spring-neap tidal cycle-- are tides strong enough to weaken establsihment of two layer flow?
+*Motivation:* How do boundary conditions/initial conditions change the magnitude of exchange flow? This magnitude might be a point of sensitivity when comparing to SalishSeaCast and Ecology's Salish Sea Model, as this controls nutrients that are coming in from the ocean at depth (far and away the largest source of nutrient loading in Puget Sound). Explore tidally variable stratification over spring-neap tidal cycle-- are tides strong enough to weaken establishment of two layer flow?
 
 *Next steps:*
 - Identify what drives more exchange flow: try initial conditions half fresh half salty 
