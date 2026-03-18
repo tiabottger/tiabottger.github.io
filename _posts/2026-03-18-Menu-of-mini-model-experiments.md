@@ -23,6 +23,8 @@ I want to use this blog post to track ideas for LiveOcean learning.
 
 ## Intermodel comparison learning points
 Where models are different from eachother:
-- implementation of biogeochemistry
+- implementation of biogeochemistry?
+- role of boundary conditions?
+- magnitude of estuarine circulation/ physical modeling differences?
 
 
