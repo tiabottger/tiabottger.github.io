@@ -16,9 +16,13 @@ Fig 2. Hypoxic area by subbasin timeseries
     
 Similarly to the Salish Sea model, Hood Canal accounts for far and away the largest extent of hypoxia. Breaking this down by year, I also summed the total hypoxic area by subbasin as a percent of total hypoxic area for the entire Puget Sound.
 
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2015_fig" src="https://github.com/user-attachments/assets/f3fe065b-8766-4a77-94da-9f16b0e9f8d2" />
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2016_fig" src="https://github.com/user-attachments/assets/81daaed1-b3db-44fe-abb3-44a869c17ae1" />
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2017_fig" src="https://github.com/user-attachments/assets/1cbb1658-3860-45de-a0a1-082c73f2d953" />
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2018_fig" src="https://github.com/user-attachments/assets/53e36eb6-9217-4670-837b-1386e7761f28" />
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2019_fig" src="https://github.com/user-attachments/assets/52b4e941-8c6e-48dd-ae70-ce4de09349b8" />
-<img width="1200" height="500" alt="hyparea_subbasin_percent_2020_fig" src="https://github.com/user-attachments/assets/3bc699b5-24ea-452d-808c-f1f2379f6b97" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2015_fig" src="https://github.com/user-attachments/assets/6412f7c6-c957-4e6b-9e58-262bcbbd0952" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2016_fig" src="https://github.com/user-attachments/assets/d8f5a2ef-4910-449d-a460-e4b792fbe700" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2017_fig" src="https://github.com/user-attachments/assets/46195b61-c7d1-4650-81fb-dbc89bdb095e" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2018_fig" src="https://github.com/user-attachments/assets/67cc02ef-cbd4-4378-85b6-4ce729ad5a1a" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2019_fig" src="https://github.com/user-attachments/assets/fdda604e-5199-4206-95ca-dd1b2100d1ee" />
+<img width="1200" height="500" alt="hyparea_subbasin_percent_2020_fig" src="https://github.com/user-attachments/assets/4cd1f3a5-bfd2-4112-ab56-ee50dbee35e6" />
+
+
+
+
