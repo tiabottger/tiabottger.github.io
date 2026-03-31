@@ -12,6 +12,8 @@ Fig 1. Hypoxic volume by subbasin timeseries
 <img width="1200" height="500" alt="hyparea_subbasin_comparison_fig" src="https://github.com/user-attachments/assets/3690bbfb-e183-46c8-ae9f-3a79b8066dfb" />
 Fig 2. Hypoxic area by subbasin timeseries
 
+-------------------------
+    
 Similarly to the Salish Sea model, Hood Canal accounts for far and away the largest extent of hypoxia. Breaking this down by year, I also summed the total hypoxic area by subbasin as a percent of total hypoxic area for the entire Puget Sound.
 
 <img width="1200" height="500" alt="hyparea_subbasin_percent_2015_fig" src="https://github.com/user-attachments/assets/f3fe065b-8766-4a77-94da-9f16b0e9f8d2" />
