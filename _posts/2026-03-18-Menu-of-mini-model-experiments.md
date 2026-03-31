@@ -8,7 +8,7 @@ My goal is to become familiar with the LiveOcean infrastructure beyond the user 
 **An interesting physical system on the existing ae0 grid**. The advantage of using the ae0 grid is that I do not need to remake forcing files and boundary conditions. Instead I can interrogate parameters such as:
 - How mixing is represented: changing the turbulence
 - Changing the drag coefficient: linear vs quadratic drag
-- Creating assymetric flow. Penn cove is off of strong tidal currents through Saratoga Passage which enter more at the North. What do the currents on the shelf of the idealized grid look like? Can we impose strong Coriolis forcing as a way of doing this?
+- Creating assymetric flow. Penn cove is off of strong tidal currents through Saratoga Passage which enter more at the North. What do the currents on the shelf of the idealized grid look like? Can we impose strong Coriolis forcing to create assymetric flow?
 
 **A simplified subbasin on which to test biogeochemical 1D NPZD modeling**. 1D vertical dimension where I play around with changing parameters in Fennel/Banas. 
 
