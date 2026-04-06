@@ -14,5 +14,4 @@ The ocean forcing executable is LiveOcean code that "wraps around" ROMS. The fil
 The header file `estuary.h` tells ROMS what specifications are active when compiling. It defines ANA_INITIAL which reads from ana.initial.h. Looking into this file I found the following block of code defining the initial salinity gradient [here](https://github.com/myroms/roms/blob/develop/ROMS/Functionals/ana_initial.h):
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/f722100d-47b1-4533-b0bd-da8375c3896a" />
 
-
-
+This defines salinity linearly decreasing from 30 at 30km to 0 at 80km (decreasing by 30 over 50km). My idealized estuary has different dimensions, so I will implement the same salinity gradient slope, but from 150km to 200km. This is done in a new executable I called `ocnA0grdnt` [here](https://github.com/tiabottger/LO_user/blob/main/forcing/ocnA0grdnt/make_forcing_main.py).
