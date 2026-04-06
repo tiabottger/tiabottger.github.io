@@ -6,12 +6,12 @@ I am setting myself up to explore results on the idealized `ae0` grid, but this 
 
 My goal for this week is to find where the initial condition is specified and to impose the same salinity gradient onto my idealized estuary, confirming the set-up by replicating the above plot for my run.
 
-The initial conditions are set in the ocean forcing python executable. For example for the `ocnA0` executable, salinity=30 everywhere is set in line 65 [here](https://github.com/parkermac/LO/blob/main/forcing/ocnA0/make_forcing_main.py): 
+The initial conditions are set in the ocean forcing python executable. For example for the `ocnA0` executable, salinity=30 everywhere is set in line 65 [here](https://github.com/parkermac/LO/blob/main/forcing/ocnA0/make_forcing_main.py):      
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/99265508-90a3-48b2-bb55-90ae9cb5a460" />
 
 The ocean forcing executable is LiveOcean code that "wraps around" ROMS. The files 'ocean_clm.nc', 'ocean_ini.nc', and 'ocean_bry.nc' get written into by the python executable. These are the files that ROMS uses for model boundary and initial condition states. 
 
-The header file `estuary.h` tells ROMS what specifications are active when compiling. It defines ANA_INITIAL which reads from ana.initial.h. Looking into this file I found the following block of code defining the initial salinity gradient [here](https://github.com/myroms/roms/blob/develop/ROMS/Functionals/ana_initial.h):
+The header file `estuary.h` tells ROMS what specifications are active when compiling. It defines ANA_INITIAL which reads from ana.initial.h. Looking into this file I found the following block of code defining the initial salinity gradient [here](https://github.com/myroms/roms/blob/develop/ROMS/Functionals/ana_initial.h):       
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/f722100d-47b1-4533-b0bd-da8375c3896a" />
 
 This defines salinity linearly decreasing from 30 at 30km to 0 at 80km (decreasing by 30 over 50km). My idealized estuary has different dimensions, so I will implement the same salinity gradient slope, but from 150km to 200km. This is done in a new executable I called `ocnA0grdnt` [here](https://github.com/tiabottger/LO_user/blob/main/forcing/ocnA0grdnt/make_forcing_main.py).
