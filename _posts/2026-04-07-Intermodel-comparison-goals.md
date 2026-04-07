@@ -15,6 +15,6 @@ Finally, the difficulty of comparing with different grid configurations became c
 
 Meeting over Zoom at the end of June, in person in September.
 - Salish Sea Model other years available?
-- Compare hourly values SalishSeaCast and LiveOcean for 2017 (request hourly data from SalishSeaCast), daily average for other years. 
+- Compare hourly values SalishSeaCast and LiveOcean for 2017, daily average for all years. 
 - Pull SalishSeaCast into Parker's obs dataset
   
