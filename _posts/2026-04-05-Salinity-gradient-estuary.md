@@ -17,3 +17,7 @@ The header file `estuary.h` tells ROMS what specifications are active when compi
 This defines salinity linearly decreasing from 30 at 30km to 0 at 80km (decreasing by 30 over 50km). My idealized estuary has different dimensions, so I will implement the same salinity gradient slope, but defined for my grid where each "longitude" is the equivalent of 100km so a range of 50km is from 0 to 0.5. This is done for a new forcing I called `ocnA0grdnt` [here](https://github.com/tiabottger/LO_user/blob/main/forcing/ocnA0grdnt/make_forcing_main.py).
 
 After generating forcing files with `ocnA0grdnt` I can plot the initial condition from the file `ocean_ini.nc` found in `LO/output/forcing/ae0/f2020.01.01/ocnA0grdnt/ocean_ini.nc`. 
+
+<img width="500" alt="ae0_tgrdnt_initialcondition" src="https://github.com/user-attachments/assets/d4af0113-f8fc-4305-b5ec-2ee69923cd8a" />
+
+
