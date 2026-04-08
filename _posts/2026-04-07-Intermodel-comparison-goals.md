@@ -1,5 +1,5 @@
 ## Intermodel comparison goals summary
-On April 2, 2026 we had a meeting to get the ball rolling on an intermodel comparison between LiveOcean, UBC's SalishSeaCast, and the Salish Sea Model. I want to use this blog post to summarise some important take aways and possible next steps.
+On April 2, 2026 we had a meeting to get the ball rolling on an intermodel comparison between LiveOcean, UBC's SalishSeaCast, and the Salish Sea Model. I want to use this blogpost to summarise some important takeaways and possible next steps.
 
 The fundamental question we are trying to get at is whether changing nutrient input through wastewater treatment plants results in a difference in the occurance of hypoxia. This question relies on leaving the underlying hydrodynamics the same and only changing nutrients. As a result, it's important to understand differences in how the models simulate hydrodynamics as a first step before changing an input which there are no real life measurements to compare model results to. Irby et al. 2016 found that even models with the barest bones of biogeochemistry were able to simulate dissolved oxygen levels as well as those with complex biogeochem modules. And from Aurora's work we know hydrodynamic characteristics like residence time and exchange flow seem to be the most important predictors of low DO.
 
