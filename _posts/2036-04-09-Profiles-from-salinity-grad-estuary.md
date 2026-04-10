@@ -9,3 +9,4 @@ We could set the salinity initial condition directly here rather than in the for
 --------------------------
 
 Working with model run output
+https://github.com/parkermac/LO/blob/main/extract/lowpass/extract_lowpass.py
