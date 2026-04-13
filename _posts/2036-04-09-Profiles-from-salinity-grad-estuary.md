@@ -7,6 +7,13 @@ This uses a liveocean.in input file, which is produced from BLANK.in in `LO_user
 We could set the salinity initial condition directly here rather than in the forcing, when we compile ROMS it is using the choices definied in the executable header file. The liveocean.in file lives within `LO_roms\[grid]_[tag]_[ex]\fyyyy.mm.dd` which is the `roms_out_dir` where netcdf output files are also sent.
 
 --------------------------
+### Model output
+Plotting the water level tidal forcing alongside the estaury salinity, it appears that two-layered estuarine flow initially appears, but spring tide mixes the two layer structure and it isn't able to set up again until neap tide around the 12th of the month.
+<p style="text-align:center;"><video src="https://github.com/user-attachments/assets/ac2d7e49-a6d0-4c8e-a005-b563cdd99820" controls="controls" style="max-width: 800px;"></video>
 
-Working with model run output
-https://github.com/parkermac/LO/blob/main/extract/lowpass/extract_lowpass.py
+I plotted subtidally averaged velocity profiles to explore this further. Model output was averaged over 24 hours. Indeed, there is the greatest difference in surface vs. bottom velocity during neap tide on the 11-13th. 
+
+<img width="500" alt="ae0_velocityprofiles" src="https://github.com/user-attachments/assets/9bc6d569-83d6-4761-bd45-5b63c476a08b" />
+
+Here, the velocity profile is plotted versus s_rho. LiveOcean and ROMS use the terrain-following sigma coordinate with 30 layers. s=0 is defined as the surface and s=-1 is the bottom. The depth in meters depends on the local bathymetry. To convert to meters, there is a tool in `zrfun.py` which is a function of bathymetry h, sea surface height zeta, and S. However, for a physically meaningful profile vs. depth I would need to first convert to depth coordinates before averaging horizontally rather than converting after averaging. 
+
