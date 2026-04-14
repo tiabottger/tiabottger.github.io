@@ -15,6 +15,6 @@ Plotting the water level tidal forcing alongside the estaury salinity, it appear
 I plotted subtidally averaged velocity profiles to explore this further. Model output was averaged over 24 hours. Indeed, there is the greatest difference in surface vs. bottom velocity during neap tide on the 11-13th. 
 
 <img width="500" alt="ae0_velocityprofiles" src="https://github.com/user-attachments/assets/9bc6d569-83d6-4761-bd45-5b63c476a08b" />      
-
+     
 Here, the velocity profile is plotted versus s_rho. LiveOcean and ROMS use the terrain-following sigma coordinate with 30 layers. s=0 is defined as the surface and s=-1 is the bottom. The depth in meters depends on the local bathymetry. To convert to meters, there is a tool in `zrfun.py` which is a function of bathymetry h, sea surface height zeta, and S. However, for a physically meaningful profile vs. depth I would need to first convert to depth coordinates before averaging horizontally rather than converting after averaging. 
 
