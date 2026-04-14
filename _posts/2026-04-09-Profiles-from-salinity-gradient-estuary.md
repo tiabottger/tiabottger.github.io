@@ -1,3 +1,4 @@
+## Profiles from salinity gradient estuary
 I modified the initial salinity gradient within the forcing file following LiveOcean wraparound code procedure, which led to some exploration of how LiveOcean intersects with ROMS. When we do a model run we run the script `LO/driver/driver_roms00.py`. This relies on `LO/driver/batch/klone00_batch_BLANK.sh`. This shell script ([here](https://github.com/parkermac/LO/blob/main/driver/batch/klone00_batch_BLANK.sh)) contains the actual command to run ROMS in line 36:
 <img width="700" alt="image" src="https://github.com/user-attachments/assets/2ffdc2e3-f738-4dcb-9015-9c40b7679f53" />
   
