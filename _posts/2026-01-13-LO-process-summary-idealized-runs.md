@@ -76,7 +76,7 @@ calls in forcing scripts from **`LO/forcing/[FRC]/make_forcing_main.py`**
 
 ***On apogee:***   
 ***Pull LO_user changes***     
-<img width="800" height="300" alt="image" src="https://github.com/user-attachments/assets/e79c57f5-ab19-4ebb-b760-b9fded15d18a" />
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/e79c57f5-ab19-4ebb-b760-b9fded15d18a" />
 
 > **Note:** -s new for ocean start type sets up initial conditions
 
