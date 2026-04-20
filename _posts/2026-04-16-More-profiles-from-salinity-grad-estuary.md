@@ -6,3 +6,7 @@ My previous velocity profiles averaged over the entire domain, using sigma layer
 <img width="1200" height="586" alt="image" src="https://github.com/user-attachments/assets/431999b6-b599-43ae-b7e3-d4673f326b9a" />
 
 On the ROMS Arakawa-C grid salinity and depth are stored on rho-points (middle points) while velocity is stored on u-points (edge points). To plot velocity versus depth, I used the nearest rho-grid depth to the u-grid point.
+
+<img width="426" height="80" alt="image" src="https://github.com/user-attachments/assets/3df04a16-6234-4787-abee-92f8dd252961" />
+
+Quadratic drag at the mouth sees more dampening in velocities toward the bed. Into shallower water the linear drag case is able to reach faster velocities especially apparent during neap tide. Whether it is spring or neap tide seems to have less of an effect in the linear drag case, whereas there is a clear seperation between spring and neap tide for quadratic drag where differences in tidal velocities are more significant as drag scales with u^2. in which stratification is of a similar scale
