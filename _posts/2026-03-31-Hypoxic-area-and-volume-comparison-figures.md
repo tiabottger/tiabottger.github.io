@@ -1,4 +1,4 @@
-## LiveOcean Hypoxic area and volume comparison figures
+## LiveOcean hypoxic area and volume comparison figures
 
 As part of the intermodel comparison discussion we would like to take a closer look at the hypoxic area and volume by subbasins in the Puget Sound. This is motivated by the question of where and when the most hypoxia occurs, and what differences there may be between LiveOcean and the Salish Sea Model.
 
