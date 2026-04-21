@@ -8,7 +8,7 @@ My previous velocity profiles averaged over the entire domain, using sigma layer
 On the ROMS Arakawa-C grid salinity and depth are stored on rho-points (middle points) while velocity is stored on u-points (edge points). To plot velocity versus depth, I used the nearest rho-grid depth to the u-grid point.
 
 ## Linear vs. Quadratic drag
-I created a new executable in which I modified the header file to define LDRAG instead of QDRAG and reran the model. The values for the drag coefficients are shown below, given in the BLANK.in file that becomes liveocean.in when make_dot_in.py is run as part of the LiveOcean wraparound code. When LDRAG is defined, RDRG is used rather than RDRG2.
+I created a new executable in which I modified the header file to define LDRAG instead of QDRAG and reran the model. The values for the drag coefficients are shown below, given in the BLANK.in file that becomes liveocean.in when make_dot_in.py is run as part of the LiveOcean wraparound code. The .in file is the ROMS input file. When LDRAG is defined, RDRG is used rather than RDRG2.
 <img width="426" height="80" alt="image" src="https://github.com/user-attachments/assets/3df04a16-6234-4787-abee-92f8dd252961" />    
 
 Below are profiles for the linear drag model run to provide comparison.
