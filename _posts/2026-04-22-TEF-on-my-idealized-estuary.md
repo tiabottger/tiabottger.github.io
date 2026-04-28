@@ -1,4 +1,4 @@
-## TEF on idealized estuary
+## TEF on my idealized estuary
 The Total Exchange Flow (TEF) framework integrates over isohalines (contours of constant salinity) instead of physical distance. TEF is therefore transport as a function of salinity, resulting in how much salty water flows in and how much fresher estuarine water flows out.
 
 Important terms in TEF:
@@ -18,5 +18,5 @@ In the calculation of TEF, transport data are binned into salinity classes. A tr
 
 **Bottom panel**: **exchange-driven salt transport and tidal prism**. $Q_{prism}$ is the maximum possible exchange flow if all the flood tide made $Q_{in}$ and the ebb tide made $Q_{out}$. So this tern represents the volume transport due to only the flooding and ebbing of tides. It is plotted with $Q_{in} \Delta S$, which is the transort of salt by the exchange flow. When the tidal prism is at its maximum, there is zero transport of salt by the exchange flow and we can assume that the tides are causing sloshing back and forth of well mixed water such that the salinity of the inflow is the same as the salinity of the outflow. When the tidal prism is at a minimum and we expect the least transport due to tidal energy, two-layer estuarine exchange sets up and there is a net salt transport of approximately 90 g/kg m^3/s. 
 
-## Check volume budget
+#### Check volume budget
 We know $Q_{net} = Q_{in}+ Q_{out} \approx Q_{r}$. My river forcing the model has a flow rate of 1000 m^3/s. This is reflected in inflow and outflow balancing eachother in the top panel, with the magnitude of the blue outflow line being about 1000 m^3/s larger.
