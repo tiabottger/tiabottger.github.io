@@ -37,7 +37,7 @@ calls in user specifications in **`LO_user/pgrid/gfun_user.py`**
   - grid_m01_r01_s01_x01.nc *indexing indicating changes to: mask (m), river (r), smoothing (s), or extras (x)*
   - roms_river_info.csv
  
-***Copy `LO_data/grids/\[gridname]` to apogee and klone***
+***Copy `LO_data/grids/[gridname]` to apogee and klone***
 
 > **How are rivers defined?**  
 > Non-analytical runs have files created which contain information about rivers (names, gage numbers) and their channel locations, which are created by LO/pre/river1 programs.
