@@ -12,10 +12,9 @@ $F = \left\langle \int us dA \right\rangle$, where $u$ is the along-channel velo
 
 The isohaline salt flux decomposition looks at transport as a function of salinity rather than spatial position. **Transport is sorted into salinity classes/bins, then tidally averaged, and then summed with positive values creating Q_in and negative values becoming Q_out.** TEF requires a discretization into salinity space, where transport data are binned into salinity classes. If the number of discrete salinity classes is chosen too high TEF profiles can become too noisy. In the code, `process_sections.py` creates 1000 salinity bins. It then sorts each cell's transport into salinity bins, so we are left with q(time, sbins). To better understand what happens next, I took a closer look at q versus salinity class. 
 
-Tidal averaging is done in `bulk_calc.py` using a 72 hour godin filter.  I applied the same filter (centered on 12:00) and plotted the histogram style plot. 
+Tidal averaging is done in `bulk_calc.py` using a 72 hour godin filter.  I applied the same filter (centered on 12:00) and plotted the histogram style plot for a day during spring tide when there was strong vertical mixing and a day during neap tide where the flow seperated into two layers:
+<img width="2106" alt="image" src="https://github.com/user-attachments/assets/bfb408ea-74d3-41f0-ae32-d1ab52333fa3" />
 
-
-
-Salinity space identifies inflow/outflow layers as multiple extrema in Q(S).
+Salinity space identifies inflow/outflow layers as multiple extrema in q(sbins), which is done in the code `tef_fun_lorenz.py`. 
 
 
