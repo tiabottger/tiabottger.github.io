@@ -134,6 +134,7 @@ To run my no river version over 2 weeks on coenv cpu-g2 (faster than macc comput
 ```
 python3 driver_roms00.py -g ae0 -t tnoriv -x xa0 -s newcontinuation -0 2020.01.01 -1 2020.01.15 -grp coenv -cpu cpu-g2 -np 64 < /dev/null > ae.log &
 ```
+To continue a run (extend for more dates) use flag -continuation
 
 **Output:**  
 On klone:  
