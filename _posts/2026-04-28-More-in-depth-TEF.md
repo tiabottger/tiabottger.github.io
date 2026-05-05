@@ -9,7 +9,7 @@ Fig. 2: TEF values along estuary averaged over spring-neap tidal cycle, river di
 The volume of the exchange flow decreases away from the mouth, as expected as the estuary cross section narrows. The most interesting dynamics occur at the mouth and within the closest 20 km. At the mouth, outflow dominates. The larger magnitude of $Q_out$ corresponding to a larger magnitude of $S_in$ at the mouth suggests there is an export of freshwater while the inflowing water is saltier than the outflowing water. Moving away from the mouth, there is a net inflow as $Q_out$ shrinks faster than $Q_in$. This suggests the surface outflow is weaker than the inflow at depth here.
 
 I repeated the TEF calculations with a model run in which I decreased the river discharge from 1000 m^3/s to 100 m^3/s. 
-<img width="1200" height="754" alt="image" src="https://github.com/user-attachments/assets/18d32c1a-b95f-4da4-8d14-36d41abfc9db" />    
+<img width="1200" alt="image" src="https://github.com/user-attachments/assets/18d32c1a-b95f-4da4-8d14-36d41abfc9db" />    
 Fig. 3: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 100 m^3/s
 
 Here we see the same structure with a peak positive net inflow just landward of the mouth. At the mouth we expect mixing to be the strongest, moving this peak due to saltwater intrusion further inland. The difference between $S_in$ and $S_out$ is smaller in this case where less freshwater enters the estuary.
