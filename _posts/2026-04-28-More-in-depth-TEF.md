@@ -15,10 +15,6 @@ Fig. 3: TEF values along estuary averaged over spring-neap tidal cycle, river di
 
 Here we see the same structure with a peak positive net inflow just landward of the mouth. At the mouth we expect mixing to be the strongest, moving this peak due to saltwater intrusion further inland. The difference between $S_{in}$ and $S_{out}$ is smaller in this case where less freshwater enters the estuary.
 
-Looking at the average over spring and neap tides seperately yields an interesting result. During spring tide, when mixing is strong, $Q_{in}$ only exists at the mouth where the tidal extent pushes water into the estuary. Further away from the mouth $Q_{in}$ collapses leaving only $Q_{out}$. During neap tide, the signal looks much more like what we would expect for estuarine exchange, with $Q_{in}$ and $Q_{out}$ approximately equal in magnitude. The result below is for the case with river discharge of 1000 m^3/s, but looks similar for the 100 m^3/s case.
-
-<img width="1306" alt="image" src="https://github.com/user-attachments/assets/78b00281-fac9-4d3d-b9fb-a393b9c1a556" />
-
 
 ## Eulerian vs. Isohaline salt flux decomposition
 In the classic Eulerian view, salt flux through the section is computed as (tidally averaged)
