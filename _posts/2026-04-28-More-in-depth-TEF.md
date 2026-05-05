@@ -19,7 +19,7 @@ For the 1000 m^3/s discharge case I compared averages over spring vs. neap tide:
 <img width="490"  alt="image" src="https://github.com/user-attachments/assets/0ae96150-5002-47f3-a744-f3441dccc670" />
 <img width="490" alt="image" src="https://github.com/user-attachments/assets/ce64d60a-a5ed-4b2f-bfbf-cb7a65f103e0" />
 
-During spring tide the estuary is well-mixed, with transport in and out happening at the same salinities. During neap tide there is stratification. Interestingly during stratification the structure flips and outflow of freshwater dominates over most of the estuary.
+During spring tide the estuary is well-mixed, with transport in and out happening at the same salinities. During neap tide there is stratification. Interestingly during stratification the structure flips and outflow of freshwater dominates over most of the estuary. Outflow from the river is stronger relative to the tides during neap tide, which might explain this.
 
 ## Eulerian vs. Isohaline salt flux decomposition
 In the classic Eulerian view, salt flux through the section is computed as (tidally averaged)
