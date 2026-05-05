@@ -13,8 +13,13 @@ I repeated the TEF calculations with a model run in which I decreased the river 
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/18d32c1a-b95f-4da4-8d14-36d41abfc9db" />    
 Fig. 3: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 100 m^3/s   
 
-Here we see the same structure with a peak positive net inflow just landward of the mouth. At the mouth we expect mixing to be the strongest, moving this peak due to saltwater intrusion further inland. The difference between $S_{in}$ and $S_{out}$ is smaller in this case where less freshwater enters the estuary.
+Here we see the same structure with a peak positive net inflow just landward of the mouth. At the mouth we expect mixing to be the strongest, moving this peak due to saltwater intrusion further inland. The difference between $S_{in}$ and $S_{out}$ is smaller in this case where less freshwater enters the estuary, and the estuary is more well-mixed.
 
+For the 1000 m^3/s discharge case I compared averages over spring vs. neap tide:
+<img width="490"  alt="image" src="https://github.com/user-attachments/assets/0ae96150-5002-47f3-a744-f3441dccc670" />
+<img width="490" alt="image" src="https://github.com/user-attachments/assets/ce64d60a-a5ed-4b2f-bfbf-cb7a65f103e0" />
+
+During spring tide the estuary is well-mixed, with transport in and out happening at the same salinities. During neap tide there is stratification. Interestingly during stratification the structure flips and outflow of freshwater dominates over most of the estuary.
 
 ## Eulerian vs. Isohaline salt flux decomposition
 In the classic Eulerian view, salt flux through the section is computed as (tidally averaged)
