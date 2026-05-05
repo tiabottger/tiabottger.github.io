@@ -5,12 +5,13 @@ Fig. 1: Sections for TEF analysis
 
 This is similar to Figure 5 of MacCready et al. 2014. Note $Q_{out}$ is negative, so $-Q_{out}$ is plotted for better comparison. The TEF values have been averaged over a spring-neap tidal cycle.
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/a184f2a3-45a4-4bac-a5c3-f8733f16e51d" />
-Fig. 2: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 1000 m^3/s
+Fig. 2: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 1000 m^3/s   
+
 The volume of the exchange flow decreases away from the mouth, as expected as the estuary cross section narrows. The most interesting dynamics occur at the mouth and within the closest 20 km. At the mouth, outflow dominates. The larger magnitude of $Q_{out}$ corresponding to a larger magnitude of $S_in$ at the mouth suggests there is an export of freshwater while the inflowing water is saltier than the outflowing water. Moving away from the mouth, there is a net inflow as $Q_{out}$ shrinks faster than $Q_{in}$. This suggests the surface outflow is weaker than the inflow at depth here.
 
 I repeated the TEF calculations with a model run in which I decreased the river discharge from 1000 m^3/s to 100 m^3/s. 
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/18d32c1a-b95f-4da4-8d14-36d41abfc9db" />    
-Fig. 3: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 100 m^3/s
+Fig. 3: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 100 m^3/s   
 
 Here we see the same structure with a peak positive net inflow just landward of the mouth. At the mouth we expect mixing to be the strongest, moving this peak due to saltwater intrusion further inland. The difference between $S_{in}$ and $S_{out}$ is smaller in this case where less freshwater enters the estuary.
 
