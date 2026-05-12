@@ -5,15 +5,21 @@ The observational dataset includes bottle data described in [LO/obs](https://git
 Shallow is defined as all depths above -30 m, while deep is defined as all depths below 30 m. Salish Sea Cast is shown in blue while LiveOcean is shown in red. 
 
 ### 2015
+Deep
 <img width="1200" alt="bottle_2015_all_deep" src="https://github.com/user-attachments/assets/bd4853e8-7725-4c72-96ba-057d7fd9d4b8" />
+Shallow
 <img width="1200" alt="bottle_2015_all_shallow" src="https://github.com/user-attachments/assets/c32556df-8b27-4dfb-928c-ca868f42a49d" />
 
 ### 2016
+Deep
 <img width="1200" alt="bottle_2016_all_deep" src="https://github.com/user-attachments/assets/5481d127-c350-48b2-88e2-66c39a22b350" />
+Shallow
 <img width="1200" alt="bottle_2016_all_shallow" src="https://github.com/user-attachments/assets/2585f020-61dd-442f-9ee0-76e7c8748beb" />
 
 ### 2017
+Deep
 <img width="1200" alt="bottle_2017_all_deep" src="https://github.com/user-attachments/assets/4b482b8c-6cc8-4adf-991a-73736e2e6e38" />
+Shallow
 <img width="1200" alt="bottle_2017_all_shallow" src="https://github.com/user-attachments/assets/98623b93-1e33-4af3-88de-035b11b6d39f" />
 
 ## Initial Thoughts
