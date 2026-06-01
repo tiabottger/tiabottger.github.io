@@ -2,3 +2,20 @@
 - SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. Property-property plots show a closer agreement between observed and modeled data for LiveOcean at depths below 30 m, which is reflected in the timeseries data.
 
 Does this have to do with a difference in settling rates or how sediment burial is accounted for?
+
+## Differences between LiveOcean and SalishSeaCast biogeochemistry
+LiveOcean uses an NPZD (dissolved inorganic nitrogen, phytoplankton, zooplankton, and detritus) nitrogen-based model. The nutrient pool includes all forms of dissolved inorganic nitrogen (nitrate, nitrite, ammonium etc.) Chlorophyll is estimated from phytoplankton biomass using a chlorophyll to nitrogen ratio. Biogeochemical processes are represented as transformations of different forms of nitrogen between these pools (Davis et al. 2014). 
+
+SalishSeaCast also uses an NPZD-type model using the currency of nitrogen coupled with silicon cycling. This biological component is called SMELT: Salish Sea Model Ecosystem-Lower Trophic. The dissolved nutrients tracked are nitrate, ammonium, and silica. These are taken up by three phytoplankton groups: diatoms, flagellates, and *M. rubrum* a mixotrophic ciliate (Olson et al. 2020). SalishSeaCast tracks multiple phytoplankton groups while LiveOcean has one phytoplankton group. There are fewer interacting parameters in LiveOcean, however better process detail does not necessarily produce better predictive skill. 
+<img width="500" height="336" alt="image" src="https://github.com/user-attachments/assets/205a171b-0738-468a-ab35-ead2b342be06" />
+SalishSeaCast biological component, from Olon et al. 2020
+
+
+## Differences in model domain
+LiveOcean model domain extends across the continental shelf with the open ocean boundary located far offshore, while SalishSeaCast has its western boundary at the entrance to the Strait of Juan de Fuca. As a result, LiveOcean resolves much of the transport pathway for water entering the Puget Sound, while for SalishSeaCast a larger fraction of the incoming ocean signal must be prescribed at the open boundary. The open boundary conditions on temperature and salinity in the Strait of Juan de Fuca are based on fields from LiveOcean rather than climatology (Olson et al. 2020).
+
+<img width="500" height="390" alt="image" src="https://github.com/user-attachments/assets/256733ba-3c87-4cc1-9b25-9a8bdbc9145b" />
+SalishSeaCast model domain, from Soontiens et al. 2016
+
+## Different vertical coordinates
+LiveOcean uses terrain following sigma coordinates while SalishSeaCast uses z-level coordinates. Terrain following coordinates can maintain high resolution near the bottom and surface, and may better represent bottom dynamics such as flow over sills because coordinate surfaces align with flow pathways while z-level coordinates represent bottom topography as a staircase.
