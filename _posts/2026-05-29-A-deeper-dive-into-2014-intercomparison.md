@@ -1,7 +1,11 @@
+## 2014 property-property plots
+<img width="1000" alt="bottle_2014_all_deep" src="https://github.com/user-attachments/assets/508fe18f-03eb-4050-90ed-84683cbe3550" />
+
+<img width="1000" alt="bottle_2014_all_shallow" src="https://github.com/user-attachments/assets/6264ea79-ecf8-4d06-bcac-fe21e797e6b7" />
+
 ## Initial big takeaways
 - SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. Property-property plots show a closer agreement between observed and modeled data for LiveOcean at depths below 30 m, which is reflected in the timeseries data.
-
-Does this have to do with a difference in settling rates or how sediment burial is accounted for?
+- There aren't clear regional differences
 
 ### Differences between LiveOcean and SalishSeaCast biogeochemistry
 LiveOcean uses an NPZD (dissolved inorganic nitrogen, phytoplankton, zooplankton, and detritus) nitrogen-based model. The nutrient pool includes all forms of dissolved inorganic nitrogen (nitrate, nitrite, ammonium etc.) Chlorophyll is estimated from phytoplankton biomass using a chlorophyll to nitrogen ratio. Biogeochemical processes are represented as transformations of different forms of nitrogen between these pools (Davis et al. 2014). 
