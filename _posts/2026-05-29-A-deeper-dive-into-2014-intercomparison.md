@@ -13,9 +13,17 @@ Depths below 30 m
 All depths
 
 ## 2014 plots by basin
+
 ## Initial big takeaways
-- SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. Property-property plots show a closer agreement between observed and modeled data for LiveOcean at depths below 30 m.
-- LiveOcean DO levels have the least error in Whidbey Basin and Hood Canal (bias -12.0 and -15.1 as compared to -18.7 and -19.9) while SalishSeaCast DO levels have the least error in Main Basin and South Sound (bias -25.8 and -27.6 as compared to -31.9 and -33.3). 
+- SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. SalishSeaCast predictions have similar bias regardless of depth, while LiveOcean predicts shallow values more closely than values at depth (bias -8.2 vs -16.3).
+- LiveOcean DO levels have the least error in Whidbey Basin and Hood Canal (bias -12.0 and -15.1 as compared to -18.7 and -19.9) while SalishSeaCast DO levels have the least error in Main Basin and South Sound (bias -25.8 and -27.6 as compared to -31.9 and -33.3).
+- NO3 has the least error in Main Basin for both models. SalishSeaCast NO3 has the highest error in Hood Canal, while LiveOcean NO3 has the highest error in South Sound. The same is true for DIN, the sum of NO3 and NH4. SalishSeaCast NH4 also has the least error in Main Basin and highest error in Hood Canal. LiveOcean NH4 has the least error in Whidbey Basin and highest error in South Sound. 
+
+## Thinking about differences by basin...
+- Hood canal has restricted exchange due to sill near entrance, deep water can remain isolated for a long time.
+- Whidbey basin is strongly freshwater influenced, circulation more strongly driven by river discharge.
+- Main Basin closer to ocean inflow, connected through Admiralty inlet, more frequently renewed.
+- South Sound is relatively shallow, separated from Main Basin by constrictions. 
 
 ### Differences between LiveOcean and SalishSeaCast biogeochemistry
 LiveOcean uses an NPZD (dissolved inorganic nitrogen, phytoplankton, zooplankton, and detritus) nitrogen-based model. The nutrient pool includes all forms of dissolved inorganic nitrogen (nitrate, nitrite, ammonium etc.) Chlorophyll is estimated from phytoplankton biomass using a chlorophyll to nitrogen ratio. Biogeochemical processes are represented as transformations of different forms of nitrogen between these pools (Davis et al. 2014). 
@@ -25,7 +33,6 @@ SalishSeaCast also uses an NPZD-type model using the currency of nitrogen couple
 <img width="500" height="336" alt="image" src="https://github.com/user-attachments/assets/205a171b-0738-468a-ab35-ead2b342be06" />          
 
 SalishSeaCast biological component, from Olson et al. 2020
-
 
 ### Differences in model domain
 LiveOcean model domain extends across the continental shelf with the open ocean boundary located far offshore, while SalishSeaCast has its western boundary at the entrance to the Strait of Juan de Fuca. As a result, LiveOcean resolves much of the transport pathway for water entering the Puget Sound, while for SalishSeaCast a larger fraction of the incoming ocean signal must be prescribed at the open boundary. The open boundary conditions on temperature and salinity in the Strait of Juan de Fuca are based on fields from LiveOcean rather than climatology (Olson et al. 2020).       
