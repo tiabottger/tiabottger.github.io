@@ -19,7 +19,7 @@ All depths
 - LiveOcean DO levels have the least error in Whidbey Basin and Hood Canal (bias -12.0 and -15.1 as compared to -18.7 and -19.9) while SalishSeaCast DO levels have the least error in Main Basin and South Sound (bias -25.8 and -27.6 as compared to -31.9 and -33.3).
 - NO3 has the least error in Main Basin for both models. SalishSeaCast NO3 has the highest error in Hood Canal, while LiveOcean NO3 has the highest error in South Sound. The same is true for DIN, the sum of NO3 and NH4. SalishSeaCast NH4 also has the least error in Main Basin and highest error in Hood Canal. LiveOcean NH4 has the least error in Whidbey Basin and highest error in South Sound. 
 
-## Thinking about differences by basin...
+### Thinking about differences between basins...
 - Hood canal has restricted exchange due to sill near entrance, deep water can remain isolated for a long time.
 - Whidbey basin is strongly freshwater influenced, circulation more strongly driven by river discharge.
 - Main Basin closer to ocean inflow, connected through Admiralty inlet, more frequently renewed.
