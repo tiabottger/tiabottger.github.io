@@ -13,8 +13,23 @@ Depths below 30 m
 All depths
 
 ## 2014 plots by basin
+<img width="800" alt="bottle_2014_hc_all" src="https://github.com/user-attachments/assets/931b52d2-536f-483f-98c9-e5e9f3dfd875" />
 
-## Initial big takeaways
+Hood canal
+
+<img width="800" alt="bottle_2014_wb_all" src="https://github.com/user-attachments/assets/f79d0ae6-8493-4072-8336-fec9f2cedb04" />
+
+Whidbey basin
+
+<img width="800" alt="bottle_2014_mb_all" src="https://github.com/user-attachments/assets/fe072261-7dc2-49ad-8512-89973ab34840" />
+
+Main basin
+
+<img width="800" alt="bottle_2014_ss_all" src="https://github.com/user-attachments/assets/8604a2ca-470c-4397-b2ff-d3fcae7a164b" />
+
+South Sound
+
+## Initial takeaways
 - SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. SalishSeaCast predictions have similar bias regardless of depth, while LiveOcean predicts shallow values more closely than values at depth (bias -8.2 vs -16.3).
 - LiveOcean DO levels have the least error in Whidbey Basin and Hood Canal (bias -12.0 and -15.1 as compared to -18.7 and -19.9) while SalishSeaCast DO levels have the least error in Main Basin and South Sound (bias -25.8 and -27.6 as compared to -31.9 and -33.3).
 - NO3 has the least error in Main Basin for both models. SalishSeaCast NO3 has the highest error in Hood Canal, while LiveOcean NO3 has the highest error in South Sound. The same is true for DIN, the sum of NO3 and NH4. SalishSeaCast NH4 also has the least error in Main Basin and highest error in Hood Canal. LiveOcean NH4 has the least error in Whidbey Basin and highest error in South Sound. 
@@ -22,7 +37,7 @@ All depths
 ### Thinking about differences between basins...
 - Hood canal has restricted exchange due to sill near entrance, deep water can remain isolated for a long time.
 - Whidbey basin is strongly freshwater influenced, circulation more strongly driven by river discharge.
-- Main Basin closer to ocean inflow, connected through Admiralty inlet, more frequently renewed.
+- Main basin closer to ocean inflow, connected through Admiralty inlet, more frequently renewed.
 - South Sound is relatively shallow, separated from Main Basin by constrictions. 
 
 ### Differences between LiveOcean and SalishSeaCast biogeochemistry
