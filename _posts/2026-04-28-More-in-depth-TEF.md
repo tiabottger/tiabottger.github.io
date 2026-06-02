@@ -3,7 +3,7 @@ To look at TEF along my estuary, I defined sections spaced roughly 20 km apart a
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/5d8cf4f9-a199-47c9-b8f1-360bd22bcae5" />   
 Fig. 1: Sections for TEF analysis
 
-This is similar to Figure 5 of MacCready et al. 2014. Note $Q_{out}$ is negative, so $-Q_{out}$ is plotted for better comparison. I calculated $Q_{out}$ and $Q_{in}$ by summing the values where q was positive and negative respectively, and $S_{out}$ and $S_{in}$ as the salt flux where q was positive and negative devided by $Q_{out}$ and $Q_{in}$. The TEF values have been averaged over a spring-neap tidal cycle.
+This is similar to Figure 5 of MacCready et al. 2014. Note $Q_{out}$ is negative, so $-Q_{out}$ is plotted for better comparison. I calculated $Q_{out}$ and $Q_{in}$ by summing the values where q was positive and negative respectively, and $S_{out}$ and $S_{in}$ as the salt flux where q was positive and negative divided by $Q_{out}$ and $Q_{in}$. The TEF values have been averaged over a spring-neap tidal cycle.
 <img width="1200" alt="image" src="https://github.com/user-attachments/assets/a184f2a3-45a4-4bac-a5c3-f8733f16e51d" />
 Fig. 2: TEF values along estuary averaged over spring-neap tidal cycle, river discharge = 1000 m^3/s   
 
