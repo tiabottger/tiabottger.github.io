@@ -32,7 +32,8 @@ Main basin
 South Sound
 
 ## Initial takeaways
-- SalishSeaCast and LiveOcean dissolved oxygen values diverge with depth. SalishSeaCast predictions have similar bias regardless of depth, while LiveOcean predicts shallow values more closely than values at depth (bias -8.2 vs -16.3).
+- LiveOcean generally predicts higher DO values than SalishSeaCast. This is particularly true for shallower depths. LiveOcean and SalishSeaCast predictions become closer in agreement with depth.
+- SalishSeaCast predictions have similar bias regardless of depth, while LiveOcean predicts shallow values more closely than values at depth (bias -8.2 vs -16.3).
 - LiveOcean DO levels have the least error in Whidbey Basin and Hood Canal (bias -12.0 and -15.1 as compared to -18.7 and -19.9) while SalishSeaCast DO levels have the least error in Main Basin and South Sound (bias -25.8 and -27.6 as compared to -31.9 and -33.3).
 - NO3 has the least error in Main Basin for both models. SalishSeaCast NO3 has the highest error in Hood Canal, while LiveOcean NO3 has the highest error in South Sound. The same is true for DIN, the sum of NO3 and NH4. SalishSeaCast NH4 also has the least error in Main Basin and highest error in Hood Canal. LiveOcean NH4 has the least error in Whidbey Basin and highest error in South Sound. 
 
