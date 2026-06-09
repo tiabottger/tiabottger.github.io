@@ -1,3 +1,4 @@
+## Timeseries and distribution plots
 ## Timeseries 
 I've plotted timeseires pulling the closest model value to match observations at 1 m and 30.5 m depth, looking at a station in each region of Puget Sound. LiveOcean tends to predict higher values for DO than SalishSeaCast. You can see the seasonal variability, with oxygen concentrations decreasing as spring blooms die out at the end of summer. There is greater variability closer to the surface, where oxygen is higher due to exchange with the atmosphere and photosynthesis. The models have the closest agreement in Main basin- Admiralty inlet, and some of the biggest differences in Whidbey basin - Saratoga passage. 
 <img width="1300" alt="image" src="https://github.com/user-attachments/assets/14c2deb7-cfe9-4652-93c5-4612910cd007" />
