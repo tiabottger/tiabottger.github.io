@@ -1,3 +1,4 @@
+## First look at model intercomparison
 I created property-property plots using the script `plot_multi.py` which I modified to plot LiveOcean data output from the cas7_t1_x11ab run and SalishSeaCast (ssc) data compared to observations. Note that Salish SeaCast does not have a chlorophyll variable and instead has output for diatoms ("diat") and flagellates ("flag"). Salish Sea Cast also has silicon which LiveOcean does not.
 
 The observational dataset includes bottle data described in [LO/obs](https://github.com/parkermac/LO/tree/main/obs). To create the combined dataset, model data has been interpolated to the observation depth using the nearest model vertical index.
