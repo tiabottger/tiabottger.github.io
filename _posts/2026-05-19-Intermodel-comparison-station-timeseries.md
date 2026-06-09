@@ -1,3 +1,4 @@
+## Intermodel comparison station timeseries
 My first look into model vs. observational data was creating property-property broader plots exploring broader statistics and model skill metrics for SalishSeaCast and LiveOcean. Now I am taking a closer look at timeseries data to compare observations to model output. I am looking for whether there are any spatial trends or differences between stations, and what the timeseries generally show. 
 
 Starting with dissolved oxygen (DO), we have bottle measurements at three main depths: -30.5 m, -11 m, and -1 m. Some stations have deeper measurements, but these are consistent across most stations so I'll look at these for now. In the property-property plots, LiveOcean performed worse than SalishSeaCast at depth whereas shallow values performed better. 
