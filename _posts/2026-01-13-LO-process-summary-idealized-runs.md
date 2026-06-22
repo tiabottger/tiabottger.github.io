@@ -90,7 +90,8 @@ calls in forcing scripts from **`LO/forcing/[FRC]/make_forcing_main.py`**
 **Purpose:**   
 compiling ROMS converts to machine-readable code. We need a `build_roms.sh` and `.h` header file for our executable. These tell ROMS what parts of the code we want to interact with. So the \[ex] part of a run name tracks what version of ROMS was compiled. When we have a run with biogeochemistry turned on, we will additionally have a `Fennel.h` header file. In the header file, we can define and undefine choices we want ROMS to run with. 
 
-- copy executable folder from Parker's [LO_roms_user](https://github.com/parkermac/LO_roms_user/blob/main/README.md).   
+- copy executable folder from Parker's [LO_roms_user](https://github.com/parkermac/LO_roms_user/blob/main/README.md).
+
 **`LO_roms_user/[ex]`**
 - define and undefine choices in header file, for example in `LO_roms_user/xa0/xa0.h`:  
   <img width="400" alt="image" src="https://github.com/user-attachments/assets/2c10abbc-54a5-4bf3-a489-5543750f128c" />
@@ -99,6 +100,7 @@ compiling ROMS converts to machine-readable code. We need a `build_roms.sh` and 
    
 ***On klone***    
 ***Pull LO_user, LO_roms_user changes***
+- you may also need to run `chmod u+x build_roms.sh` if access is denied 
 <img width="1794" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
 
 aliases:
