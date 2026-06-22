@@ -99,7 +99,8 @@ compiling ROMS converts to machine-readable code. We need a `build_roms.sh` and 
 ***Commit/push changes to LO_roms_user in GitHub***
    
 ***On klone***    
-***Pull LO_user, LO_roms_user changes***
+***Pull LO_user, LO_roms_user changes***   
+
 - you may also need to run `chmod u+x build_roms.sh` if access is denied 
 <img width="1794" alt="image" src="https://github.com/user-attachments/assets/0e022e42-0ffe-4642-8a68-eb62b74340c9" />
 
