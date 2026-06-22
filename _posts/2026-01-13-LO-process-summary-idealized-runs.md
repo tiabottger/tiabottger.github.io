@@ -112,7 +112,7 @@ alias compile='./build_roms.sh -j 10 < /dev/null > bld.log &'
   - bld.log (where command line output is written to, can check for progress while compiles)
   - Build_romsM
     - this should be full of files! make sure wait until see a message like `ar: creating /gscratch/macc/tbottger/LO_roms_user/xa0/Build_romsM/libROMS.a`
-  -RomsM
+- RomsM
     - this is the actual executable, finished runnable program
 > **Can run:** 
 >`squeue -A macc -u tbottger` to check on job status
