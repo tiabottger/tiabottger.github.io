@@ -29,6 +29,8 @@ Looking at DIC, overall SalishSeaCast predicts lower values than LiveOcean. You 
 ## Comparing model skill by basin
 Doing this ANOVA analysis made me curious how much model error comparing to observations can be explained by within basin vs. between basin variability. I conducted a one-way ANOVA for each model, where error = model - observation so the results are about model skill rather than model agreement. Overall, LiveOcean has smaller $\eta^2$ values than SalishSeaCast, particularly for salinity, DIN, DIC, and TA. This suggests that LiveOcean's errors are less dependent on basin and its performance is more spatially consistent. Again, DO and chlorophyll exhibit the least basin dependence, indicating that errors in these variables is not driven by subbasin location. DIC and TA errors are much more basin dependent in SalishSeaCast than LiveOcean. NO3 and CT errors are more basin dependent in LiveOcean than SalishSeaCast.
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ec57d80b-4f09-4e10-8651-c3d012587836" />
+
 ### LiveOcean - observations ANOVA
 **NH4: F=117.43, p=5.56e-71, $\eta^2$=0.127   
 NO3: F=31.23, p=7.70e-20, $\eta^2$=0.106  
@@ -50,5 +52,7 @@ NO3: F=30.32, p=2.86e-19, $\eta^2$=0.040
 DO: F=6.36, p=2.75e-4, $\eta^2$=0.023  
 CT: F=10.25, p=1.07e-6, $\eta^2$=0.022  
 Chl: F=3.17, p=2.34e-2, $\eta^2$=0.009**
+
+
 
 
