@@ -18,5 +18,6 @@ DIN: F=98.35, p=1.01e-60, $\eta^2$=0.173
 SA: F=95.16, p=7.88e-59, $\eta^2$=0.157   
 TA: F=131.29, p=6.44e-80, $\eta^2$=0.155   
 CT: F=86.52, p=1.08e-53, $\eta^2$=0.080   
-Chl: F=11.26, p=2.40e-07, $\eta^2$=0.025**   
+Chl: F=11.26, p=2.40e-07, $\eta^2$=0.025**    
+
 These results suggest that model disagreement is spatially structured for salinity (SA), nutrient (NO3, NH4, DIN) and carbonate (DIC, TA) system variables. For these variables, 15-30% of model differences can be attributed to subbasin location. In contrast, for DO and and chlorophyll, most of the variability occurs within basins, with basin identity explaining very little of the model disagreement.
