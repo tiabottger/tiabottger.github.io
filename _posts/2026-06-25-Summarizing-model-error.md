@@ -8,4 +8,5 @@ In the plot below, I normalized RMSE by the standard deviation so that variables
 
 - Models have the least error for temperature (CT) as expected
 - SalishSeaCast has the greatest error predicting ammonia (NH4). This is unsurprising, Tall is currently working on a version which remineralizes NH4 faster to improve predictions.
+- Main basin seems to have the least error for both models.
 
