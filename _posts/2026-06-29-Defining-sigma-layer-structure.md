@@ -18,4 +18,4 @@ where $k_b$ is the number of sigma levels while $k$ is the layer index (1, ... ,
 | 9 | -0.7155 | -0.8538 | 0.1383 |
 | 10 | -0.8538 | -1.0000 | 0.1462 |
 
-So the bottom layer represents 14.6% of the water column. This is the percentage we will use to compare to LiveOcean and SalishSeaCast "bottom" values. 
+So the **bottom layer represents 14.6% of the water column**. This is the percentage we will use to compare to LiveOcean and SalishSeaCast "bottom" values. 
