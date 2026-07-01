@@ -7,14 +7,15 @@ I normalized RMSE by the standard deviation so that variables with different ran
 
 <img width="3333" alt="heatmap_nrmse_2014" src="https://github.com/user-attachments/assets/1823b4ae-b522-4e68-9ad9-8a726fd7391f" />
 
-The Nash-Sutcliffe model efficiency (NSE) has values from $-\infty$ to 1, where 1.0 is a perfect match between model predictions and the actual data, a value of 0 indicates the model's predictions are only as good as predicting the average of the data, and less than 0 meaning the observed average is a better predictor than the model.
+The Nash-Sutcliffe model efficiency (NSE) is calculated as 1 minus the ratio of the error variance of the modeled data to the variance of the observed data. It has values from $-\infty$ to 1, where 1.0 is a perfect match between model predictions and the actual data, a value of 0 indicates the model's predictions are only as good as predicting the average of the data, and less than 0 meaning the observed average is a better predictor than the model.
 <img width="3333" alt="heatmap_nse_2014" src="https://github.com/user-attachments/assets/b23c452d-a078-4bbf-86e7-8d040205a781" />
 
 Willmott's index of agreement has values from 1.0 to 0, where 1 is perfect agreement and 0 is no agreement, indicating that the model performs no better than guessing the average value of all observations.
 <img width="3333" alt="heatmap_willmott_d_2014" src="https://github.com/user-attachments/assets/67316b93-b0a2-4771-8adf-dfd03d1a5d53" />
 
+NSE penalizes large errors heavily because it uses the variance which squares the differences, while Willmott's index uses absolute differences making it more robust to outliers.
 ### Takeaways
 - Models have the least error for temperature (CT) as expected. Dissolved Oxygen is also well predicted.
 - SalishSeaCast and LiveOcan have the greatest error in predicting ammonia (NH4). SalishSeaCast especially has high error for NH4. This is unsurprising, Tall is currently working on a version which remineralizes NH4 faster to improve predictions, and Susan mentioned that there previosuly wasn't model validation done for NH4. NH4 is a transient species and is commonly not represented well in models.
-- Model performance is more or less spatially consistent. Looking at NRMSE, Main basin seems to have the least error for both models, although there isn't a stand-out region with the least error. Looking at NSE and Willmott's Index of Agreement, South Sound seems to have the most error for both models. I wonder if this is because South Sound is shallower.
+- Model performance is more or less spatially consistent. Looking at NRMSE, Main basin seems to have the least error for both models, although there isn't a stand-out region with the least error. Looking at NSE and Willmott's Index of Agreement, South Sound seems to have the most error for both models. I wonder if this is because South Sound is a shallower region.
 
