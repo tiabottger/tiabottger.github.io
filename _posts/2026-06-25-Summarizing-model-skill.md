@@ -14,7 +14,7 @@ Willmott's index of agreement has values from 1.0 to 0, where 1 is perfect agree
 <img width="3333" alt="heatmap_willmott_d_2014" src="https://github.com/user-attachments/assets/67316b93-b0a2-4771-8adf-dfd03d1a5d53" />
 
 ### Takeaways
-- Models have the least error for temperature (CT) as expected
+- Models have the least error for temperature (CT) as expected. Dissolved Oxygen is also well predicted.
 - SalishSeaCast and LiveOcan have the greatest error in predicting ammonia (NH4). SalishSeaCast especially has high error for NH4. This is unsurprising, Tall is currently working on a version which remineralizes NH4 faster to improve predictions, and Susan mentioned that there previosuly wasn't model validation done for NH4. NH4 is a transient species and is commonly not represented well in models.
 - Looking at NRMSE, Main basin seems to have the least error for both models, although there isn't a stand-out region with the least error. Looking at NSE and Willmott's Index of Agreement, South Sound seems to have the most error for both models. I wonder if this is because South Sound is shallower.
 
