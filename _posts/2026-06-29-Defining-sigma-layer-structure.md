@@ -19,3 +19,5 @@ where $k_b$ is the number of sigma levels while $k$ is the layer index (1, ... ,
 | 10 | -0.8538 | -1.0000 | 0.1462 |
 
 So the **bottom layer represents 14.6% of the water column**. This is the percentage we will use to compare to LiveOcean and SalishSeaCast "bottom" values. 
+## Going into the code
+ROMS has depth information stored in two forms, 'z_rho': the depth of the cell centers where values for DO and other variables are stored, and 'z_w': the depth of cell interfaces. The arrays are ordered bottom to surface.
