@@ -19,5 +19,14 @@ where $k_b$ is the number of sigma levels while $k$ is the layer index (1, ... ,
 | 10 | -0.8538 | -1.0000 | 0.1462 |
 
 So the **bottom layer represents 14.6% of the water column**. This is the percentage we will use to compare to LiveOcean and SalishSeaCast "bottom" values. 
-## Going into the code
+## Calculating average DO in the bottom layer
 ROMS has depth information stored in two forms, `z_rho`: the depth of the cell centers where values for DO and other variables are stored, and `z_w`: the depth of cell interfaces, so `np.diff(z_w)` gives the thickness of each cell. The arrays are ordered bottom to surface.
+
+To find the average value in the bottom 14.6%, we need to clip the top cell where it intersects the 14.6% boundary. Then we can compute a weighted average where for each cell we multiply the concentration at the rho-point (the average of that cell) by the cell thickness, with the top cell weighted by the clipped thickness, then dividing out the layer thickness.
+
+The other method would be treating the profile as a smooth continuous curve and integrating the curve with `np.trapezoid`. For this method, the value of DO at the 14.6% boundary is interpolated between the nearest points. For the value at the bottom boundary, the deepest rho-point is used. This method is potentially less appropriate because the values stored at rho points are already considered cell averages and should not be treated as point values. This method assumes concentration varies linearly between rho points, however the model gives constant concentrations within each model cell. The cell-thickness method assumes constant concentrations within each cell, matching model output.
+
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/6ca3098e-adf3-41a1-9cdf-c73e9494ac0c" />
+
+The two methods give near identical average values, with the trapezoidal integration method reporting a slightly higher mean. Here the points are dissolved oxygen levels at each rho point.
+
