@@ -26,7 +26,7 @@ To find the average value in the bottom 14.6%, we need to clip the top cell wher
 
 The other method would be treating the profile as a smooth continuous curve and integrating the curve with `np.trapezoid`. For this method, the value of DO at the 14.6% boundary is interpolated between the nearest points. For the value at the bottom boundary, the deepest rho-point is used. This method is potentially less appropriate because the values stored at rho points are already considered cell averages and should not be treated as point values. This method assumes concentration varies linearly between rho points, however the model gives constant concentrations within each model cell. The cell-thickness method assumes constant concentrations within each cell, matching model output.
 
-<img width="948" alt="image" src="https://github.com/user-attachments/assets/6ca3098e-adf3-41a1-9cdf-c73e9494ac0c" />
+<img width="1018" alt="image" src="https://github.com/user-attachments/assets/d4d97f72-0c99-4c45-88f3-e19941f8f402" />
 
 The two methods give near identical average values, with the trapezoidal integration method reporting a slightly higher mean. Here the points are dissolved oxygen levels at each rho point.
 
