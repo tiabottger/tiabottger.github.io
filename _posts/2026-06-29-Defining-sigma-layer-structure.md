@@ -20,13 +20,25 @@ where $k_b$ is the number of sigma levels while $k$ is the layer index (1, ... ,
 
 So the **bottom layer represents 14.6% of the water column**. This is the percentage we will use to compare to LiveOcean and SalishSeaCast "bottom" values. 
 ## Calculating average DO in the bottom layer
-ROMS has depth information stored in two forms, `z_rho`: the depth of the cell centers where values for DO and other variables are stored, and `z_w`: the depth of cell interfaces, so `np.diff(z_w)` gives the thickness of each cell. The arrays are ordered bottom to surface.
+ROMS has depth information stored in two forms, `z_rho`: the depth of the cell centers where values for DO and other variables are stored, and `z_w`: the depth of cell interfaces, so `np.diff(z_w)` gives the thickness of each cell. 
 
 To find the average value in the bottom 14.6%, we need to clip the top cell where it intersects the 14.6% boundary. Then we can compute a weighted average where for each cell we multiply the concentration at the rho-point (the average of that cell) by the cell thickness, with the top cell weighted by the clipped thickness, then dividing out the layer thickness.
 
 The other method is to treat the profile as a smooth continuous curve and integrating the curve with `np.trapezoid`. For this method, the value of DO at the 14.6% boundary is interpolated between the nearest points. For the value at the bottom boundary, the deepest rho-point is used. This method is potentially less appropriate because the values stored at rho points are already considered cell averages and should not be treated as point values. This method assumes concentration varies linearly between rho points, however the model gives constant concentrations within each model cell. The cell-thickness method assumes constant concentrations within each cell, matching model output.
 
-<img width="1018" alt="image" src="https://github.com/user-attachments/assets/d4d97f72-0c99-4c45-88f3-e19941f8f402" />
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/d4d97f72-0c99-4c45-88f3-e19941f8f402" />
 
 The two methods give near identical average values, with the trapezoidal integration method reporting a slightly higher mean. Here the points are dissolved oxygen levels at each rho point.
+
+## SalishSeaCast analogue
+SalishSeaCast stores the thickness of each cell as `e3t` with the center depths where values are stored given by `deptht`. 
+
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/7a5695e2-7fdf-4210-827e-7fdb4b806d25" />
+
+Many locations only contain one cell within the bottom 14.6% layer. For profiles where the next point has a significantly different value, the interpolation method returns a value influenced by the next point which may result in a pretty different average DO for the layer than the cell mean method, which will return the same value as the cell if there is only one cell within the bottom layer. 
+
+The bathymetry of SalishSeaCast and LiveOcean appear to be different enough in some locations that the bottom layer calculated as a water column percentage results in different depths between the models. I compared the bottom values for each station and most differences were within 10 m with the exception of PSS019, which LiveOcean has as a depth of 62 meters while in SalishSeaCast it is 103 meters. SalishSeaCast has 40 set z-layers, however most of the Puget Sound is shallower. Layers which have values of zero are deeper than the bathymetry and have been filtered out for this analysis.
+
+## Next steps
+For a hypoxic area or volume calculation I would need to calculate the bottom 14.6% layer average DO value for each horizontal grid cell, then filter for cells that fall below a set threshold (e.g. 2 mg/L) and sum them together.
 
