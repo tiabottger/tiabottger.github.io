@@ -40,6 +40,21 @@ Many locations only contain one cell within the bottom 14.6% layer. For profiles
 
 The bathymetry of SalishSeaCast and LiveOcean appear to be different enough in some locations that the bottom layer calculated as a water column percentage results in different depths between the models. I compared the bottom values for each station and most differences were within 10 m, with a couple of exceptions however. PSS019 has the biggest difference, in which LiveOcean has as a depth of 62 meters while in SalishSeaCast it is 103 meters. HCB003 also has a notable difference of 30 meters between SalishSeaCast and LiveOcean. SalishSeaCast has 40 set z-layers, however most of the Puget Sound is shallower. Layers which have values of zero are deeper than the bathymetry and have been filtered out for this analysis.
 
+| Station | LO h (m) | SSC h (m) | SSC − LO (m) |
+|:--------|---------:|----------:|-------------:|
+| SAR003 | 121.58 | 134.16 | 12.58 |
+| PSS019 | 62.23 | 102.57 | 40.35 |
+| SKG003 | 11.76 | 18.66 | 6.90 |
+| HCB004 | 31.55 | 38.64 | 7.09 |
+| HCB003 | 97.85 | 127.99 | 30.14 |
+| ADM003 | 207.72 | 207.07 | -0.66 |
+| CMB003 | 134.42 | 148.79 | 14.37 |
+| GOR001 | 166.68 | 175.97 | 9.29 |
+| CSE001 | 47.36 | 45.70 | -1.67 |
+| EAP001 | 203.39 | 208.56 | 5.17 |
+| SIN001 | 12.56 | 10.99 | -1.57 |
+| PSB003 | 68.55 | 60.15 | -8.40 |
+
 
 ## Next steps
 For a hypoxic area or volume calculation I would need to calculate the bottom 14.6% layer average DO value for each horizontal grid cell, then filter for cells that fall below a set threshold (e.g. 2 mg/L) and sum them together.
