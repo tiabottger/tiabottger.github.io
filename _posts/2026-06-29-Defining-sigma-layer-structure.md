@@ -5,7 +5,8 @@ $\sigma = \frac{z - \zeta}{H + \zeta} = \frac{z - \zeta}{D} $
 According to Khangaonkar et al. 2018: "The vertical configuration of the model uses 10 sigma-stretched layers distributed using a power law function with an exponent P-Sigma of 1.5, which provides more layer density near the surface." The FVCOM manual describes the power law function as:  
 $\sigma(k) = (\frac{k-1}{k_b-1})^{P_{\sigma}}$  
 where $k_b$ is the number of sigma levels while $k$ is the layer index (1, ... , $k_b$). For 10 layers and $P_{\sigma} = 1.5$ this would produce the following layers:  
-| Layer | Upper σ | Lower σ | Thickness ∣Δσ∣ |
+
+| Layer | Upper σ | Lower σ | Thickness Δσ |
 |:-----:|-----------------:|-----------------:|------------------------------:|
 | 1 | 0.0000 | -0.0316 | 0.0316 |
 | 2 | -0.0316 | -0.0894 | 0.0578 |
