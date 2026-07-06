@@ -38,7 +38,10 @@ SalishSeaCast stores the thickness of each cell as `e3t` with the center depths 
 
 Many locations only contain one cell within the bottom 14.6% layer. For profiles where the next point has a significantly different value, the interpolation method returns a value influenced by the next point which may result in a pretty different average DO for the layer than the cell thickness method, which will return the same value as the cell if there is only one cell within the bottom layer. 
 
-The bathymetry of SalishSeaCast and LiveOcean appear to be different enough in some locations that the bottom layer calculated as a water column percentage results in different depths between the models. I compared the bottom values for each station and most differences were within 10 m with the exception of PSS019, which in LiveOcean has as a depth of 62 meters while in SalishSeaCast it is 103 meters. SalishSeaCast has 40 set z-layers, however most of the Puget Sound is shallower. Layers which have values of zero are deeper than the bathymetry and have been filtered out for this analysis.
+The bathymetry of SalishSeaCast and LiveOcean appear to be different enough in some locations that the bottom layer calculated as a water column percentage results in different depths between the models. I compared the bottom values for each station and most differences were within 10 m, with a couple of exceptions however. PSS019 has the biggest difference, in which LiveOcean has as a depth of 62 meters while in SalishSeaCast it is 103 meters. HCB003 also has a notable difference of 30 meters between SalishSeaCast and LiveOcean. SalishSeaCast has 40 set z-layers, however most of the Puget Sound is shallower. Layers which have values of zero are deeper than the bathymetry and have been filtered out for this analysis.
+
+<img width="684" height="502" alt="image" src="https://github.com/user-attachments/assets/efd8ca06-487e-4cab-9a32-e6da1a2a01fc" />
+
 
 ## Next steps
 For a hypoxic area or volume calculation I would need to calculate the bottom 14.6% layer average DO value for each horizontal grid cell, then filter for cells that fall below a set threshold (e.g. 2 mg/L) and sum them together.
