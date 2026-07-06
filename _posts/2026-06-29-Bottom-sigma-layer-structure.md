@@ -34,7 +34,7 @@ The two methods give near identical average values, with the trapezoidal integra
 ## SalishSeaCast analogue
 SalishSeaCast stores the thickness of each cell as `e3t` with the center depths where values are stored given by `deptht`. 
 
-<img width="1000" alt="image" src="https://github.com/user-attachments/assets/7a5695e2-7fdf-4210-827e-7fdb4b806d25" />
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/7a5695e2-7fdf-4210-827e-7fdb4b806d25" />
 
 Many locations only contain one cell within the bottom 14.6% layer. For profiles where the next point has a significantly different value, the interpolation method returns a value influenced by the next point which may result in a pretty different average DO for the layer than the cell thickness method, which will return the same value as the cell if there is only one cell within the bottom layer. 
 
