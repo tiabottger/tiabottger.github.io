@@ -55,7 +55,57 @@ The bathymetry of SalishSeaCast and LiveOcean appear to be different enough in s
 | SIN001 | 12.56 | 10.99 | -1.57 |
 | PSB003 | 68.55 | 60.15 | -8.40 |
 
+## Example code
+```
+### cell-thickness method ###
+# Choose timestep
+do = (ds["dissolved_oxygen"].isel(time_counter=itime) * 0.032).values  # µmol/L -> mg/L
+z = ds["deptht"].values
+e3t = ds["e3t"].isel(time_counter=itime).values
 
+# Mask out below bottom values (40 layers but Puget Sound is shallower, 0 for layers below bathymetry)
+valid = np.isfinite(do) & np.isfinite(e3t) & (e3t > 0) & (do > 0)
+
+do = do[valid]
+z = z[valid]
+e3t = e3t[valid]
+
+# e3t gives cell thicknesses
+z_upper = z - e3t / 2  # shallower cell interface
+z_lower = z + e3t / 2 # deeper cell interface
+
+z_bot = z_lower[-1]  # bottom of the water column from deepest valid cell
+
+# Bottom 14.6% of the water column
+z_146 = 0.854 * z_bot
+
+overlap = np.maximum(
+    0, # cells above the bottom 14.6% have negative overlap, set to 0 so don't contribute to the average
+    np.minimum(z_lower, z_bot) - np.maximum(z_upper, z_146)
+)
+
+bottom_mean_do = np.sum(do * overlap) / np.sum(overlap)
+```
+```
+### trapz integration method ###
+# Sort by depth for interpolation
+idx = np.argsort(z)
+z_sorted = z[idx]
+do_sorted = do[idx]
+
+# Interpolate DO at layer boundaries
+do_bot = np.interp(z_bot, z_sorted, do_sorted)
+do_146 = np.interp(z_146, z_sorted, do_sorted)
+
+# Keep rho points inside the bottom 14.6% layer
+mask = (z_sorted >= z_bot) & (z_sorted <= z_146)
+
+z_trapz = np.concatenate(([z_bot], z_sorted[mask], [z_146]))
+do_trapz = np.concatenate(([do_bot], do_sorted[mask], [do_146]))
+
+# Integrate concentration over depth and divide by layer thickness
+bottom_mean_do_trapz = np.trapezoid(do_trapz, z_trapz) / (z_146 - z_bot)
+```
 ## Next steps
 For a hypoxic area or volume calculation I would need to calculate the bottom 14.6% layer average DO value for each horizontal grid cell, then filter for cells that fall below a set threshold (e.g. 2 mg/L) and sum them together. I will produce a file which contains time-variable bottom DO concentration and thickness of the water column.
 
