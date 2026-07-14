@@ -1,6 +1,6 @@
 ## Hypoxic area bottom layer comparison
 
-Using the weighted average method described in my previous blogpost, I calculated the bottom DO concentration corresponding to the bottom sigma layer of Salish Sea Model (the bottom 14.6% of the water column). I defined the bottom 14.6% of the water column based on the bathymetry depth. 
+Using the weighted average method described in my previous blogpost, I calculated the bottom DO concentration corresponding to the bottom sigma layer of Salish Sea Model (the bottom 14.6% of the water column) which uses a resolution of 10 sigma layers as compared to LiveOcean's 30. I defined the bottom 14.6% of the water column based on the bathymetry depth. 
 
 Below I've plotted the hypoxic area as calculated using the concentration in the bottom cell of LiveOcean as compared to the bottom 14.6% of the water column layer. The hypoxic area calculation using the bottom 14.6% layer returns less hypoxia than the bottom cell calculation. This makes sense, the bottom 14.6% layer is averaging the concentration over a larger portion of the water column, which "dilutes" the concentration leading to less values falling below the 2 mg/L threshold. 
 
