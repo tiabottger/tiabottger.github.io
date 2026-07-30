@@ -12,6 +12,6 @@ Figure 2. Dissolved Oxygen from LiveOcean 2013 reruns
 Figure 3. Nitrate from LiveOcean 2013 reruns     
 
 
-The second rerun of 2013 appears to have less of a decrease in DO and less of an increase in nitrate as compared to the first repeat year, indicating that perhaps changes have mostly propagated through the system. 
+The second rerun of 2013 appears to have less of a decrease in DO and less of an increase in nitrate as compared to the first repeat year, indicating that perhaps changes have mostly propagated through the system. However, it seems there is still spin-up occurring.
 
 I am rerunning 2014 using an initial condition of the end of the third 2013 year.
