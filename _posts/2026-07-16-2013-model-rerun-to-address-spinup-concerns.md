@@ -10,8 +10,13 @@ Figure 2. Dissolved Oxygen from LiveOcean 2013 reruns
 
 <img width="4203" alt="2013_rerun_NO3_timeseries" src="https://github.com/user-attachments/assets/b35c061c-3bdb-48f4-8d5c-f40aee5f96a6" />
 Figure 3. Nitrate from LiveOcean 2013 reruns     
-
-
+</p>
 The second rerun of 2013 appears to have less of a decrease in DO and less of an increase in nitrate as compared to the first repeat year, indicating that perhaps changes have mostly propagated through the system. However, it seems there is still spin-up occurring.
+</p>
+Looking at each 2013 rerun year stacked on top of each other reveals that the second rerun had less of a decrease/increase in DO/nitrate. Hood Canal seems to have the most spin-up effects.
+
+<img width="5157" alt="2013_rerun" src="https://github.com/user-attachments/assets/15e9243a-54a5-4ca6-9859-f16d6c3bf747" />
+Figure 4. Stacked 2013 reruns for dissolved oxygen and nitrate in each basin.   
+</p>
 
 I am rerunning 2014 using an initial condition of the end of the third 2013 year.
