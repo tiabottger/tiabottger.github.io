@@ -7,6 +7,11 @@ First, here are the stacked timeseries plots created as before, now with 4 itera
 
 The 4th rerun sits almost on top of the previous run. 
 
+Plotting the mean value of each run, we can see how the values seem to be stabilizing in an exponential relationship:
+
+<img width="1620" src="https://github.com/user-attachments/assets/de0371bb-9a0d-46d9-ab9d-4742fe7e4321" />
+
+
 To quantify convergence, I thought about the difference between successive runs. Because a straight difference between runs would vary in time, I took the root mean square difference. I could then define a percent convergence relative to the initial root mean square difference between runs. This method would enable me to say something like: "Spin-up was considered achieved when the successive-run difference decreased to ≤5% of the initial repeated-year difference, corresponding to 95% convergence."
 
 Despite looking quite close in the stacked timeseries plots, the fourth repeat run did not reach 95% convergence as I have defined it here:
