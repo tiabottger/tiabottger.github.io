@@ -20,7 +20,7 @@ I calculated the hypoxic area for both models using the grid cell area, and the 
 
 <img width="700" src="https://github.com/user-attachments/assets/bc7a43ef-612f-4ac5-aeff-7989b5d5ba4e" />
 
-For both the hypoxic area and volume, SalishSeaCast doesn't reach as high of a peak and drops off before LiveOcean values do. From previous results comparing models to observational data, we know that SalishSeaCast tends to be biased slightly lower than LiveOcean for dissolved oxygen values so this is consistent. I am curious about the difference in timing seen here, while hypoxic area and volume seem to increase at similar timing for both models, the decrease occurrs much sooner for SalishSeaCast.
+For both the hypoxic area and volume, SalishSeaCast doesn't reach as high of a peak and drops off before LiveOcean values do. From previous results comparing models to observational data, we know that SalishSeaCast tends to be biased slightly lower than LiveOcean for dissolved oxygen values, meaning SalishSeaCast is underpredicting oxygen and overpredicting hypoxia more than LiveOcean-- this doesn't match the result here? I am curious about the difference in timing seen here, while hypoxic area and volume seem to increase at similar timing for both models, the decrease occurrs much sooner for SalishSeaCast.
 
 
 
