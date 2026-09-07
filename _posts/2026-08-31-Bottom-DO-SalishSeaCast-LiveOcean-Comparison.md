@@ -4,6 +4,11 @@ We calculated the dissolved oxygen concentration in the bottom 14.6% of the wate
 First, I plotted the time-averaged DO concentration over the year of 2014 as a spatial heatmap. Whidbey basin stands out as quite different between LiveOcean and SalishSeaCast. The DO concentrations for SalishSeaCast are fairly low throughout Whidbey basin, not just in terminal inlets such as Penn Cove. Surprisingly, Whidbey basin low DO concentrations seem to be comparable to Hood canal in SalishSeaCast. LiveOcean DO concentrations do not drop as low in Whidbey basin, although there are some lower values in Holmes harbor. The lowest DO values occurr in Lynch cove at the end of Hood canal, where it appears to be hypoxic (<= 2mg/L) on average. 
 <img width="1000" src="https://github.com/user-attachments/assets/e53bbb7e-902e-41cd-8930-2dc3cee930e2" />
 
+Here is the DO concentration overtime as an animation:
+<p style="text-align:center;"><video src="https://github.com/user-attachments/assets/5d5fd52f-a612-47f9-bf7d-80810da35712" controls="controls" style="max-width: 800px;"></video>
+ </p>
+
+
 Next I plotted the hypoxic occurrence, comparing thresholds of 2 mg/L and 3 mg/L. Using a threshold of 2 mg/L, Hood canal doesn't light up for SalishSeaCast. I checked in with Tall about the very low hypoxic occurrence, and he said this is something the model has consistently represented in previous analyses. He has associated this behavior, at least partly, with a potential bathymetry issue in that region and says they are working on it. When the threshold is increased to 3 mg/L, Hood canal becomes more prominent in the SalishSeaCast result, along with "hotspots" in Whidbey basin. Interestingly, Penn cove doesn't seem to be an area of high hypoxic occurrence, rather, Port Susan, Holmes harbor, and the eastern part of Saratoga passage have the highest hypoxic occurrence. 
 
 The plots for LiveOcean look more like what we have come to expect (although this expectation is largely based on LiveOcean model results). Hood canal has by far the most hypoxic occurrence, with hypoxia occurring most severely in Lynch cove. When we increase the threshold to 3 mg/L, the area of hypoxic occurrence expands throughout Hood canal, and we also see hypoxic days in Holmes harbor and a hint of color change in Penn cove suggesting some hypoxic days here as well.
