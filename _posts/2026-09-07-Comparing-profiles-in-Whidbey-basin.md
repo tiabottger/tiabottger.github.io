@@ -1,0 +1,3 @@
+## Comparing profiles in Whidbey basin
+
+Whidbey basin seems to have the largest, most striking differences in bottom DO between LiveOcean and SalishSeaCast. One thought is that the model's differences in representing bathymetry where large rivers enter Whidbey basin is causing this incoming freshwater to mix or circulate differently between the models, with different stratification structures. The next step in exploring the differences arising in Whidbey basin is therefore to compare the vertical structure of the water column at a couple of sites in Whidbey basin (we don't have the full vertical extraction for more than a couple of sites, although we could do more extractions). 
