@@ -1,3 +1,7 @@
 ## Comparing profiles in Whidbey basin
 
 Whidbey basin seems to have the largest, most striking differences in bottom DO between LiveOcean and SalishSeaCast. One thought is that the model's differences in representing bathymetry where large rivers enter Whidbey basin is causing this incoming freshwater to mix or circulate differently between the models, with different stratification structures. The next step in exploring the differences arising in Whidbey basin is therefore to compare the vertical structure of the water column at a couple of sites in Whidbey basin (we don't have the full vertical extraction for more than a couple of sites, although we could do more extractions). 
+
+Of the sites in Whidbey basin that we have extractions for, SKG003 seems to have the biggest differences between the two models. This is the site which is closest to the Skagit river and flats, which are handled differently between the models. From previous comparison to observations, we know that SalishSeaCast had a greater RMSE in representing DO here than LiveOcean.
+
+Looking at the profiles at SKG003, it seems like SalishSeaCast shows more evidence of freshwater stratification in the upper 2.5 meters of the water column. The surface water for LiveOcean is consistently more dense, perhaps due to more vertical mixing in LiveOcean than SalishSeaCast. The oxygen profiles tell an interesting story. In LiveOcean, the highest oxygen concentrations occur near the surface, whereas SalishSeaCast exhibits a maxima around 5 meters. 
