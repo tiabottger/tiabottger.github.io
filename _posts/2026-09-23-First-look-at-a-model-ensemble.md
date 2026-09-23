@@ -3,9 +3,10 @@ A big update to share this week! Salish Sea Model output data is available at th
 
 Having the full resolution of Salish Sea Model data output allowed me to match model data to our larger observational dataset. And, for the first time be able to calculate a model mean between all three models. This gets to a fundamental question, is a model ensemble containing more information than one model alone a better predictor of dissolved oxygen? Each model has made its own choices and parameterizations, and each model has error. When looking at a spatial map of which model has the least RMSE at any given station location, there is no clear "winner" and different models have strengths at different sites (Figure 1). As a result, taken together, a model ensemble using the mean of models performs best overall, with the exception of a few stations (Figure 2).
 
-<img width="270" src="https://github.com/user-attachments/assets/e81fbe21-e48f-4c44-809b-78900a012543" />    
+<img width="270" src="https://github.com/user-attachments/assets/e81fbe21-e48f-4c44-809b-78900a012543" />    <img width="270" alt="image" src="https://github.com/user-attachments/assets/4f91d4f5-3e1f-47ac-a7ed-f93cbf437b89" />
 
-Figure 1. Spatial map colored by which model as the lowest RMSE at each station, and the value of that RMSE.
+
+Figure 1. Spatial map colored by which model as the lowest RMSE at each station, and the value of that RMSE. The second panel includes the model mean.
 
 <img width="9638" src="https://github.com/user-attachments/assets/514ff02a-7f0a-48e2-b62c-4a2fa5840af4" />     
 
