@@ -4,6 +4,7 @@ Ecology has run Salish Sea Model for the year 2014 (also 2000, 2006, and 2008). 
 
 - Phase 2 Optimization Scenarios (Opt2) are described in the 2025 report and include model improvements from Phase 1 Opt1 described in the 2021 Tech Memo, Ahmed et al. 2019. I believe Opt1 uses the same base model as Khangaonkar et al. 2018. Opt2 includes a switch to FVCOM2.7 and ICM4 from ICM2.
 - The biogeochemical model is based on CE-QUAL-ICM. The updated version, ICM4, has corrected photosynthetically active radiation (PAR) daily distribution and the capability to use variable bottom friction.
+- The 10 year spin-up used by Ecology is motivated by allowing the sediment fluxes to stabilize.
 
 
 ### Questions to follow-up on
