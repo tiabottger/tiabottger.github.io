@@ -7,6 +7,4 @@ Ecology has run Salish Sea Model for the year 2014 (also 2000, 2006, and 2008). 
 
 
 ### Questions to follow-up on
-- The Salish Sea Model data available at the data portal cites Khangaonkar et al. 2018 and Khangaonkar and Yun 2023 for more details. I assume this means the version run is following the parameters and rates listed in Khangaonkar et al. 2018? Khangaonkar and Yun 2023, which use Salish Sea Model results from 2013-2020 state "during this effort the hydrodynamic component of the model was upgraded from FVCOM2.7 to FVCOM4.3 and recalibrated over a multi-year simulation from 2013-2020."
--
--   I am not sure if it is using the updated biogeochemistry module (ICM4) or FVCOM2.7 and would like to confirm. 
+- The Salish Sea Model data available at the data portal cites Khangaonkar et al. 2018 and Khangaonkar and Yun 2023 for more details. I assume this means the version run is following the parameters and rates listed in Khangaonkar et al. 2018? Khangaonkar and Yun 2023, which use Salish Sea Model results from 2013-2020 state "during this effort the hydrodynamic component of the model was upgraded from FVCOM2.7 to FVCOM4.3 and recalibrated over a multi-year simulation from 2013-2020." I am not sure if it is using the updated biogeochemistry module (ICM4)?
