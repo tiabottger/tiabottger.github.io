@@ -19,11 +19,12 @@ The configuration and model results are described in the Puget Sound Nutrient So
 
 Fig. 1: Property-property plots of SSM PNNL model (green) compared to SSM Ecology model (purple).
 
-<img width="1000" src="https://github.com/user-attachments/assets/8b3d1b90-058a-48ce-93c3-560cbb93f8b6" />     
+<img width="1000" src="https://github.com/user-attachments/assets/149b9304-9cbd-447e-96d2-3d6ae45bcc31" />
+
 
 Fig. 2: RMSE by station comparing SSM PNNL model to SSM Ecology model.
 
-- DO RMSE is slightly lower for the Department of Ecology SSM model than the PNNL model (RMSE 1.342 compared to 1.447). While DO is biased slightly low (-0.1) for the PNNL model, the Department of Ecology model has a bias of 0.1.
+- DO RMSE is slightly lower for the Department of Ecology SSM model than the PNNL model (RMSE 1.334 compared to 1.447). While DO is biased slightly low (-0.1) for the PNNL model, the Department of Ecology model has a bias of 0.1.
 - While the PNNL model overall has larger RMSE, there are some stations for which the Ecology model has higher RMSE. RMSE is most notably improved in Ecology's model in Lynch cove.
 - Salinity predictions are slightly improved in Ecology's model, while temperature has slightly worsened. There is a larger negative bias for temperature. Colder water is more soluble to oxygen, so this might be linked to why DO went from biased slightly low to having a bias of 0.1.
 - Nitrate predictions have improved (RMSE 5.0 compared to 5.6).
