@@ -25,8 +25,8 @@ Fig. 2: RMSE by station comparing SSM PNNL model to SSM Ecology model.
 
 - DO RMSE is slightly lower for the Department of Ecology SSM model than the PNNL model (RMSE 1.342 compared to 1.447). While DO is biased slightly low (-0.1) for the PNNL model, the Department of Ecology model has a bias of 0.1.
 - While the PNNL model overall has larger RMSE, there are some stations for which the Ecology model has higher RMSE. RMSE is most notably improved in Ecology's model in Lynch cove.
-- Salinity predictions are slightly improved in Ecology's model, while temperature has slightly worsened. There is a larger negative bias for temperature. Colder water is more soluble to oxygen, so this might be linked to why DO went from biased slightly low to having a bias of 0.
-- Nitrate predictions have improved (RMSE 5.1 compared to 5.6).
+- Salinity predictions are slightly improved in Ecology's model, while temperature has slightly worsened. There is a larger negative bias for temperature. Colder water is more soluble to oxygen, so this might be linked to why DO went from biased slightly low to having a bias of 0.1.
+- Nitrate predictions have improved (RMSE 5.0 compared to 5.6).
 
 *From previous version which converted using nitrate molecular weight instead of just nitrogen*   
 - *Nitrate is extremely different between the two models. I wonder if this is a misunderstanding of the variables reported in Ecology's model output. While the value was reported as concentration of NO3 in mg/L (which I then converted to uM), Figueroa-Kaminsky et al. reports an RMSE for NO3-NO2. This is worth looking further into, especially given that the half-saturation concentration of ammonium ion required for nitrification was changed. The half saturation concentration was increased, which would potentially result in higher ammonium and lower nitrate concentrations.* 
