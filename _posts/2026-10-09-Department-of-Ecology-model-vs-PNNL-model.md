@@ -13,8 +13,8 @@ The configuration and model results are described in the Puget Sound Nutrient So
 - It seems like Ecology used data to "calibrate" the model? Not sure what this entails, but there is a sentence when describing observations used for model skill that states: "these observations are completely independent of the data used for SSM calibration."
 
 ---------------------------------------------------
+<img width="800" src="https://github.com/user-attachments/assets/3dd03e1d-5580-46f4-8914-fbe29f42446a" />
 
-<img width="800" src="https://github.com/user-attachments/assets/b87b860c-fd5e-4c98-9314-730fdc3bc3fa" />
 
 
 Fig. 1: Property-property plots of SSM PNNL model (green) compared to SSM Ecology model (purple).
@@ -23,7 +23,7 @@ Fig. 1: Property-property plots of SSM PNNL model (green) compared to SSM Ecolog
 
 Fig. 2: RMSE by station comparing SSM PNNL model to SSM Ecology model.
 
-- DO RMSE is slightly lower for the Department of Ecology SSM model than the PNNL model (RMSE 1.342 compared to 1.447). While DO is biased slightly low (-0.1) for the PNNL model, the Department of Ecology model has a bias of 0.
+- DO RMSE is slightly lower for the Department of Ecology SSM model than the PNNL model (RMSE 1.342 compared to 1.447). While DO is biased slightly low (-0.1) for the PNNL model, the Department of Ecology model has a bias of 0.1.
 - While the PNNL model overall has larger RMSE, there are some stations for which the Ecology model has higher RMSE. RMSE is most notably improved in Ecology's model in Lynch cove.
 - Salinity predictions are slightly improved in Ecology's model, while temperature has slightly worsened. There is a larger negative bias for temperature. Colder water is more soluble to oxygen, so this might be linked to why DO went from biased slightly low to having a bias of 0.
 - Nitrate predictions have improved (RMSE 5.1 compared to 5.6).
