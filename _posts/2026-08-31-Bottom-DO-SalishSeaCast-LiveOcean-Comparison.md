@@ -12,9 +12,10 @@ Here is the DO concentration overtime as an animation:
 Next I plotted the hypoxic occurrence, comparing thresholds of 2 mg/L and 3 mg/L. Using a threshold of 2 mg/L, Hood canal doesn't light up for SalishSeaCast. I checked in with Tall about the very low hypoxic occurrence, and he said this is something the model has consistently represented in previous analyses. He has associated this behavior, at least partly, with a potential bathymetry issue in that region and says they are working on it. When the threshold is increased to 3 mg/L, Hood canal becomes more prominent in the SalishSeaCast result, along with "hotspots" in Whidbey basin. Interestingly, Penn cove doesn't seem to be an area of high hypoxic occurrence, rather, Port Susan, Holmes harbor, and the eastern part of Saratoga passage have the highest hypoxic occurrence. 
 
 The plots for LiveOcean look more like what we have come to expect (although this expectation is largely based on LiveOcean model results). Hood canal has by far the most hypoxic occurrence, with hypoxia occurring most severely in Lynch cove. When we increase the threshold to 3 mg/L, the area of hypoxic occurrence expands throughout Hood canal, and we also see hypoxic days in Holmes harbor and a hint of color change in Penn cove suggesting some hypoxic days here as well.
-<img width="1000" src="https://github.com/user-attachments/assets/8c6fe104-6e37-4e30-8012-6ddbd169d575" />
 
-<img width="1000" src="https://github.com/user-attachments/assets/5e7d46cd-5c7f-4c9b-acfc-4df50f474534" />
+<img width="1000" src="https://github.com/user-attachments/assets/1fca2347-37e9-4607-b953-4a63d76651d3" />
+
+Note: a previous version falsely labeled the colorbar as hypoxic days count rather than percentage.
 
 I have consistently seen the largest disagreement between SalishSeaCast and LiveOcean model results occurring in Whidbey basin, but it is striking to see how different bottom DO in this region seems to be. The difference in information between the threshold set at 2 and 3 mg/L also is cause to consider what the limitations of the typical 2 mg/L threshold might be. In terms of how low DO effects species, we know that different species have different DO limitations. For example, Chinook salmon require more oxygen than this threshold, and Dungeness crabs have sufficient oxygen below the threshold in cold water, but not in warmer water when their metabolism increases.
 
