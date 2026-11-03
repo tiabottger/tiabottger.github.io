@@ -28,7 +28,8 @@ The hypoxic area timeseries reported in Khangaonkar et al. 2018 follows timing m
 
 Comparing hypoxic occurrence, the map reported in Khangaonkar et al. 2018 predicts far more hypoxia than any of the models for which I have calculated it. Note the color bar has been scaled the same. I suspect that Ecology's version of SSM will look more similar to what is reported in Khangaonkar et al. 2018. 
 
-<img width="1000" src="https://github.com/user-attachments/assets/891124e8-94c2-42f7-936b-d1f6791c02df" />
+<img width="1000" src="https://github.com/user-attachments/assets/ed376b6f-10c6-44be-b968-b194e4482f68" />
+
 
 ### Sensitivity to spin-up
 
@@ -36,4 +37,5 @@ I am a bit concerned about this difference between Khangaonkar et al. 2018's res
 
 To demonstrate this sensitivity, I plotted the hypoxic occurrence for LiveOcean cas7_t1_x11ab, the long hindcast of LiveOcean initialized in 2012, compared to the hypoxic occurrence for the more spin-up run of cas7_t1y14_x11ab for which 2013 was run on itself for a total of 3 times before starting the 2014 run using its initial condition. 
 
-<img width="1000" src="https://github.com/user-attachments/assets/9ba1b0cf-b052-4195-9761-c0e2fed1edab" />
+<img width="1000" src="https://github.com/user-attachments/assets/78e17e67-c089-4c51-bdb8-2333a109c761" />
+
