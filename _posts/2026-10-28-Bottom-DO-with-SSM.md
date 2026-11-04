@@ -30,6 +30,7 @@ Comparing hypoxic occurrence, the map reported in Khangaonkar et al. 2018 predic
 
 <img width="1000" src="https://github.com/user-attachments/assets/ed376b6f-10c6-44be-b968-b194e4482f68" />
 
+Note: a previous version of hypoxic occurrence plots displayed occurrence as a percentage of days, falsely labeled as count. 
 
 ### Sensitivity to spin-up
 
