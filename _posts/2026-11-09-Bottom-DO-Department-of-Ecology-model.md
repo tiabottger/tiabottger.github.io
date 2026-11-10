@@ -4,7 +4,8 @@ The Department of Ecology version reports lower DO than the PNNL version of Sali
 <img width="1000" src="https://github.com/user-attachments/assets/572b7c11-b0b4-44ea-96c6-490ba80357e6" />
 
 
-The timing of hypoxic area in the Department of Ecology version more closely resembles what we expect based on the other models. It looks like there is an event which flushes out Hood canal around the beginning of November, so I would be curious to look at wind data around this time. 
+The timing of hypoxic area in the Department of Ecology version more closely resembles what we expect based on the other models. It looks like there is an event which flushes out Hood canal around the beginning of November, so I would be curious to look at wind data around this time.    
+
 <img width="800" src="https://github.com/user-attachments/assets/c3bc19ef-7ed3-4659-981d-b65c8133733e" />
 
 
