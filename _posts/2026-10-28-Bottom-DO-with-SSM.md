@@ -38,5 +38,5 @@ I am a bit concerned about this difference between Khangaonkar et al. 2018's res
 
 To demonstrate this sensitivity, I plotted the hypoxic occurrence for LiveOcean cas7_t1_x11ab, the long hindcast of LiveOcean initialized in 2012, compared to the hypoxic occurrence for the more spin-up run of cas7_t1y14_x11ab for which 2013 was run on itself for a total of 3 times before starting the 2014 run using its initial condition. 
 
-<img width="1000" src="https://github.com/user-attachments/assets/78e17e67-c089-4c51-bdb8-2333a109c761" />
+<img width="800" src="https://github.com/user-attachments/assets/78e17e67-c089-4c51-bdb8-2333a109c761" />
 
